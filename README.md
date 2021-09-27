@@ -1,49 +1,54 @@
-[![GS-Frame](https://img.shields.io/badge/github-GeoStat_Framework-468a88?logo=github&style=flat)](https://github.com/GeoStat-Framework)
-[![Gitter](https://badges.gitter.im/GeoStat-Examples/community.svg)](https://gitter.im/GeoStat-Examples/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+# Overview
 
-# Template
-
-This is a template for an example repository.
-
-You can create a new example by simply clicking on "Use this template".
-
-The included example is showing the generation of a conditioned random field ensemble
-in 1D taken from [GSTools](https://geostat-framework.readthedocs.io/projects/gstools/en/stable/examples/06_conditioned_fields/00_condition_ensemble.html#sphx-glr-examples-06-conditioned-fields-00-condition-ensemble-py).
-
+To be added: Project description.
 
 ## Structure
 
-Please try to organize your example in the given Structure
-- `data/` - here you should place your input data
-- `src/` - here you should place your python scripts
-- `results/` - here your computed results and plots should be stored
-- `README.md` - please describe your example in the readme, potentially showing results
-- `LICENSE` - the default license is MIT, you can use another one if wanted
+The project is organized as follows:
 
+
+- `README.md` - describe your example in the readme, potentially showing results
+- `LICENSE` - the default license is MIT, we can use another one if we want
+- `data/` - here we place your input data 
+  + `LBM_results_fav.scv` - LBM simulation results for favorable conditions
+  + `LBM_results_unfav.scv` - LBM simulation results for unfavorable conditions
+  + to be added: descritions of other files containing IA evaluation results (as input for results plotting)
+- `results/` - here we store computed results and plots in the paper
+  + to be added: performance results of each IA algorithm applied
+  + to be added: figures presented in manuscript
+- `src/` - here we place your python/matlab scripts 
+  + to be added: one script for running each IA, e.g.
+  +`01_Training_DT.py` - run the training for the Decision Tree algorithm
+  + to be added: one script for perfomance testing of each IA, e.g.
+  +`01_Testing_DT.py` - run the performance test for the Decision Tree algorithm
+      run an Artificial Neuron Network algorithm
+  + to be added: one script per additional analysis
+  + scripts to reproduce the presented results (figures/tables) in manuscript
+  + `F01_Results_ANN.py` - reproducing Figure 1 of the manuscript on results of hyperparameter testing for ANN algorithm
+  + `F02_Results_RBFNN.py` - reproducing Figure 2 of the manuscript on results of hyperparameter testing for RBFNN algorithm
+  + `F03_Results_Testing.py` - reproducing Figure 3 on comparison on performance testing of all applied algorithms
+  + `F04_Results_ANN_Clogging.py` - reproducing Figure 4 of the manuscript on results of ANN algorithm performance for predicting clogging
 
 ## Python environment
 
-To make the example reproducible, it would be a good practice to provide one of
-the following files:
+To make the example reproducible, we provide the following files:
 - `requirements.txt` - requirements for [pip](https://pip.pypa.io/en/stable/user_guide/#requirements-files) to install all needed packages
-- `spec-file.txt` - specification file to create the original [conda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#building-identical-conda-environments)
-
 
 ## Workflow
 
-After finalizing your work, you should tag the repository with a version like `v1.0`.
+After finalizing our work, we tag the repository with a version like `v1.0`.
 
-Then, a [Zenodo](https://zenodo.org/) release will be created, so you can cite the repository in you publication.
+Then, a [Zenodo](https://zenodo.org/) release will be created, so we can cite the repository in our publication.
 
-Please keep your `master` branch in line with the latest release.
-For further development use the `develop` branch and update `master` with pull-requests.
+The `master` branch should always be kept in line with the latest release.
+For further development we use the `develop` branch and update `master` with pull-requests.
 
 
 ## Contact
 
-You can contact us via <info@geostat-framework.org>.
+You can contact us via <a.zech@uu.nl>.
 
 
 ## License
 
-MIT © 2020
+MIT © 2021
