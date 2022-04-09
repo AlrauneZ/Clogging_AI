@@ -62,4 +62,4 @@ plt.tight_layout()
 fig.text(0.035,0.025,'{}orable conditions'.format(condition),fontsize=textsize, bbox=dict(facecolor='w', alpha=0.2,boxstyle='round'))#transform=ax1.transAxes)
 
 # plt.savefig('../results/Fig01_ANN_{}.png'.format(condition),dpi=300)   
-plt.savefig('../results/Fig03_Results_Testing_{}.pdf'.format(condition))   
+# plt.savefig('../results/Fig03_Results_Testing_{}.pdf'.format(condition))   
