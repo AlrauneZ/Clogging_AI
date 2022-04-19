@@ -8,7 +8,7 @@ iterations = [500,1000,2000]
 
 ### Plot Specifications
 plt.close('all')
-textsize = 8
+textsize = 9
 title_text = ['Coordination number','Surface coverage','Conductivity','Void fraction']
 
 ###############################################################################
@@ -35,16 +35,14 @@ for ip,param in enumerate(params):
     range_min_samples_split = data_full[0,1:] #range(2,10)
 
     ind = np.unravel_index(np.argmax(data_full[1:,1:], axis=None), data_full[1:,1:].shape)
-    print("\nFull".format(param))
+    print("\nFull")
     print('Maximum score {:.2f} for max_depth = {} and min_samples_split = {}'.format(data_full[ind[0]+1,ind[1]+1],range_max_depth[ind[0]],range_min_samples_split[ind[1]]))
 
     ax = fig.add_subplot(len(params), len(iterations)+1, (ip+1)*(len(iterations)+1))       
     ax.imshow(data_full[1:,1:].T-1,cmap='hot')#,vmin=-5,vmax=0)
     ax.set_xticks(range_max_depth[::4]-2)
-    ax.set_xticklabels(range_max_depth[::4],fontsize=textsize)    
+    ax.set_xticklabels(range_max_depth[::4],fontsize=textsize-1)    
     ax.set_yticks([])
-    # ax.set_yticks(range_min_samples_split[::3]-2)
-    # ax.set_yticklabels(range_min_samples_split[::3],fontsize=textsize)    
 
     if ip == 0:
         ax.set_title('full',fontsize=textsize)
@@ -62,25 +60,24 @@ for ip,param in enumerate(params):
         ax = fig.add_subplot(len(params), len(iterations)+1, ip*(len(iterations)+1) + it + 1)
        
         ax.imshow(data_load[1:,1:].T-1,cmap='hot')#,vmin=-5,vmax=0)
-        ax.tick_params(axis="both",which="major",labelsize=textsize-1)   
         if it == 0:
             ax.set_ylabel(r"$mss$ - {}".format(param),fontsize=textsize)    
             ax.set_yticks(range_min_samples_split[::3]-2)
-            ax.set_yticklabels(range_min_samples_split[::3],fontsize=textsize)    
+            ax.set_yticklabels(range_min_samples_split[::3],fontsize=textsize-1)    
         else:
             ax.set_yticks([])
           
         if ip == 0:
-            ax.set_title(n_it,fontsize=textsize)
+            ax.set_title("Iterations : {}".format(n_it),fontsize=textsize)
         elif ip == len(param)+1:
             ax.set_xlabel(r"$D$ - max_depth",fontsize=textsize)    
 
         ax.set_xticks(range_max_depth[::4]-2)
-        ax.set_xticklabels(range_max_depth[::4],fontsize=textsize)    
+        ax.set_xticklabels(range_max_depth[::4],fontsize=textsize-1)    
+        # ax.tick_params(axis="both",which="major",labelsize=textsize-1)   
 
-# fig.colorbar()
-fig.text(0.035,0.025,'DT, {}orable conditions'.format(cond),fontsize=textsize, bbox=dict(facecolor='w', alpha=0.2,boxstyle='round'))#transform=ax1.transAxes)
+fig.text(0.007,0.023,'{}orable \nconditions'.format(cond),fontsize=textsize, bbox=dict(facecolor='w', alpha=0.2,boxstyle='round'))#transform=ax1.transAxes)
 plt.tight_layout()
 
-plt.savefig('../results/Fig07_DT_Hyper_Py_{}.pdf'.format(cond))   
+plt.savefig('../results/FigS04_DT_Hyper_Py_{}.pdf'.format(cond))   
 

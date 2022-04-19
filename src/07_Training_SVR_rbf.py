@@ -37,9 +37,8 @@ np.set_printoptions(suppress = True)
 
 print("\nTraining procedure for support vector regression algorithm with the rbf kernel under {}orable conditions".format(condition))
 
-for io in range(0,4):
-#for io in range(0,output_data.shape[1]):
-    print("\nTraining for output parameter: {}".format(name_output[io]))
+for io,no in enumerate(name_output):
+    print("\nTraining for output parameter: {}".format(no))
 
     ###############################################################################
     ### Run Training Procedure with Cross Validation

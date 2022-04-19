@@ -2,7 +2,7 @@ import numpy as np
 import random
 from sklearn.linear_model import Ridge
 from sklearn.model_selection import RepeatedKFold, cross_val_score
-from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+# from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 ###############################################################################
 ### Load data and set algorithm parameters
@@ -42,9 +42,9 @@ results_all[0,:] = range_alpha
 ###############################################################################
                       
 print("\nTraining procedure for linear regression algorithm under {}orable conditions".format(condition))
-for io in range(0,4):
+for io,no in enumerate(name_output):
 #for io in range(0,output_data.shape[1]):
-    print("\nTraining for output parameter: {}".format(name_output[io]))
+    print("\nTraining for output parameter: {}".format(no))
     for ia,alpha in enumerate(range_alpha):
         ridge = Ridge(alpha = alpha)
         rkf = RepeatedKFold(n_splits = n_splits, n_repeats = iterations)
@@ -60,7 +60,6 @@ for io in range(0,4):
     ind = np.unravel_index(np.argmax(results, axis=None), results.shape)
     print('Maximum score {:.2f} for alpha = {}'.format(results[ind],range_alpha[ind[0]]))
     results_CV[io+1,:] = results
-#    np.savetxt('../results/LR_Training_{}_{}_It{}.csv'.format(condition,name_output_short[io],iterations),results,fmt = '%.4f',delimiter = ',')
 
 print('Save Cross Validation Training Results to file. \n')
 np.savetxt('../results/LR_Training_{}_It{}.csv'.format(condition,iterations),results_CV.T,fmt = '%.4f',delimiter = ',',header=" , ".join(['alpha'] + name_output_short))

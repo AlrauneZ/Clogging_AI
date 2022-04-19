@@ -30,13 +30,12 @@ np.set_printoptions(suppress = True)
 ###############################################################################
 
 print("\nTraining procedure for decision tree algorithm under {}orable conditions".format(condition))
-for io in range(0,4):
-#for io in range(0,output_data.shape[1]):
+for io,no in enumerate(name_output):
     results = np.zeros((len(range_max_depth)+1,len(range_min_samples_split)+1))
     results[0,1:] = range_min_samples_split
     results[1:,0] = range_max_depth
 
-    print("\nTraining for output parameter: {}".format(name_output[io]))
+    print("\nTraining for output parameter: {}".format(no))
     for imd,max_depth in enumerate(range_max_depth):
         for imss,min_samples_split in enumerate(range_min_samples_split):
             tree = DecisionTreeRegressor(max_depth = max_depth, min_samples_split = min_samples_split, random_state = 42)

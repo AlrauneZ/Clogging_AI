@@ -2,12 +2,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-condition = 'unfav' #'fav' # 
+condition = 'fav' #'fav' # 
 params = ['CN','SC','HC','VF']
 
 ### Plot Specifications
 plt.close('all')
-textsize = 8
+textsize = 9
 title_text = ['Coordination number','Surface coverage','Conductivity','Void fraction']
 ylabel_text = ['MSE','MAE','$R^2$']
 if condition == 'fav':
@@ -45,8 +45,8 @@ for ip,param in enumerate(params):
             ax.set_ylabel(ylabel_text[i],fontsize=textsize)
 
 plt.tight_layout()
-fig.legend(['2','3','4','5','6','7','8   Neurons' ], ncol = 7,bbox_to_anchor=[0.9, 0.06],fontsize=textsize)#,&nbsp)
+fig.legend(['2','3','4','5','6','7','8   Neurons' ], ncol = 7,bbox_to_anchor=[0.95, 0.06],fontsize=textsize)#,&nbsp)
 fig.subplots_adjust(bottom=0.13)# Adjusting the sub-plots
-fig.text(0.035,0.025,'ANN, {}orable conditions'.format(condition),fontsize=textsize, bbox=dict(facecolor='w', alpha=0.2,boxstyle='round'))#transform=ax1.transAxes)
+fig.text(0.02,0.02,'{}orable cond.'.format(condition),fontsize=textsize, bbox=dict(facecolor='w', alpha=0.2,boxstyle='round'))#transform=ax1.transAxes)
 # plt.savefig('../results/Fig01_ANN_{}.png'.format(condition),dpi=300)   
-plt.savefig('../results/Fig01_ANN_{}.pdf'.format(condition))   
+plt.savefig('../results/FigS02_ANN_Hyper_MSE_{}.pdf'.format(condition))   

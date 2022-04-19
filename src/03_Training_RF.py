@@ -7,11 +7,10 @@ from sklearn.model_selection import RepeatedKFold, cross_val_score
 ### Load data and set algorithm parameters
 ###############################################################################
 
-iterations = 500
+iterations = 100
 condition = 'fav' # 'unfav' #
 
 range_n_estimators = np.arange(100,400,100)
-# range_n_estimators = [20,50,100]
 max_features = 4
 random_state = 42
 
@@ -37,10 +36,9 @@ results_all = np.zeros((len(name_output)+1,len(range_n_estimators)))
 results_all[0,:] = range_n_estimators 
 
 print("\nTraining procedure for random forest tree algorithm \n under {}orable conditions \n with {} Iterations".format(condition,iterations))
-for io in range(0,4):
-#for io in range(0,output_data.shape[1]):
+for io,no in enumerate(name_output):
     results = np.zeros((len(range_n_estimators)))
-    print("\nTraining for output parameter: {}".format(name_output[io]))
+    print("\nTraining for output parameter: {}".format(no))
     for ine, n_estimators  in enumerate(range_n_estimators):
        
         forest = RandomForestRegressor(n_estimators = n_estimators, max_features = max_features, random_state = random_state)
