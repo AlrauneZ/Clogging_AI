@@ -6,7 +6,7 @@ condition =  'unfav' #'fav' #
 params = ['CN','SC','HC','VF']
 
 ### Plot Specifications
-file_results = '../data/Results_Testing_update_{}.csv'#.format(condition)
+file_results = '../data/Results_Testing_{}.csv'#.format(condition)
 
 title_text = ['Coordination number','Surface coverage','Conductivity','Void fraction']
 score_text = ['$R^2$','MSE','MAE']
