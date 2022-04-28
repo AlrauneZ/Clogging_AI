@@ -57,7 +57,7 @@ for ic, cond in enumerate(conditions):
             x = data_load[0,1:] #range(2,10)
             score = data_load[max_depth[ic][ip]-1,1:]
             hyp2,hyp2_val = 'D',max_depth[ic][ip]
-         
+
         ax.plot(x,score,marker = 'o',ls = '-',lw=1,markersize = 4)
         ax.grid(True)
         ax.tick_params(axis="both",which="major",labelsize=textsize-1)
