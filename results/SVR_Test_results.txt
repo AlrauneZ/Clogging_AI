@@ -1,0 +1,177 @@
+####################################################
+
+Performance Testing for Support Vector Regression 
+ under favorable conditions
+####################################################
+
+#####################################
+Output Parameter: Coordination number
+
+Selected Hyperparameters: 
+ C  =  10
+ gamma = 1
+
+AI predicted values: 
+ [1.20737869 0.2532427  0.64952908 0.26236956 1.64433175 0.43067798
+ 2.1279289  0.54756737]
+LBM simulation values 
+ [0.92307692 0.76923077 0.33333333 0.66666667 2.27       0.509
+ 1.343      0.223     ]
+
+Training set score (R2): 0.8744
+
+Test data set:
+
+R2 = 0.4374
+MSE = 0.2162
+MAE = 0.4168
+
+#####################################
+Output Parameter: Surface coverage
+
+Selected Hyperparameters: 
+ C  =  100
+ gamma = 1
+
+AI predicted values: 
+ [-0.03134688  0.12330642 -0.11679761 -0.02832209  0.34005616  0.09403831
+  0.23799206  0.02171307]
+LBM simulation values 
+ [0.125  0.05   0.05   0.125  0.54   0.157  0.0675 0.066 ]
+
+Training set score (R2): 0.7150
+
+Test data set:
+
+R2 = 0.1661
+MSE = 0.0195
+MAE = 0.1284
+
+#####################################
+Output Parameter: Conductivity
+
+Selected Hyperparameters: 
+ C  =  10
+ gamma = 1
+
+AI predicted values: 
+ [-0.03140151  0.15541786  0.27944783  0.20501269  0.2629294   0.54746224
+ -0.01446082  0.7649352 ]
+LBM simulation values 
+ [0.06988273 0.08890198 0.07712766 0.08223321 0.186      0.634
+ 0.0959     0.839     ]
+
+Training set score (R2): 0.9308
+
+Test data set:
+
+R2 = 0.8405
+MSE = 0.0127
+MAE = 0.1051
+
+#####################################
+Output Parameter: Void fraction
+
+Selected Hyperparameters: 
+ C  =  100
+ gamma = 1
+
+AI predicted values: 
+ [0.89796958 0.92836872 0.9046106  0.89933967 0.86512485 0.87712808
+ 0.89883904 0.89450955]
+LBM simulation values 
+ [0.89915035 0.94957517 0.96218138 0.91175656 0.72       0.94
+ 0.954      0.986     ]
+
+Training set score (R2): 0.0965
+
+Test data set:
+
+R2 = 0.1748
+MSE = 0.0050
+MAE = 0.0559
+####################################################
+
+Performance Testing for Support Vector Regression 
+ under unfavorable conditions
+####################################################
+
+#####################################
+Output Parameter: Coordination number
+
+Selected Hyperparameters: 
+ C  =  100
+ gamma = 1
+
+AI predicted values: 
+ [2.19282441 0.34895543 0.38988776 1.77009347 0.96147741]
+LBM simulation values 
+ [2.17  0.195 0.244 2.18  0.565]
+
+Training set score (R2): 0.9862
+
+Test data set:
+
+R2 = 0.9106
+MSE = 0.0741
+MAE = 0.2258
+
+#####################################
+Output Parameter: Surface coverage
+
+Selected Hyperparameters: 
+ C  =  10
+ gamma = 100
+
+AI predicted values: 
+ [0.1954209  0.19542059 0.1954209  0.1954209  0.19542122]
+LBM simulation values 
+ [0.215  0.065  0.077  0.3375 0.278 ]
+
+Training set score (R2): 0.4011
+
+Test data set:
+
+R2 = -0.0001
+MSE = 0.0117
+MAE = 0.0986
+
+#####################################
+Output Parameter: Conductivity
+
+Selected Hyperparameters: 
+ C  =  100
+ gamma = 1
+
+AI predicted values: 
+ [0.3703137  0.7824454  0.77585516 0.58594711 0.74971121]
+LBM simulation values 
+ [0.309  0.874  0.88   0.4791 0.8986]
+
+Training set score (R2): 0.9205
+
+Test data set:
+
+R2 = 0.8134
+MSE = 0.0113
+MAE = 0.1025
+
+#####################################
+Output Parameter: Void fraction
+
+Selected Hyperparameters: 
+ C  =  10
+ gamma = 0.1
+
+AI predicted values: 
+ [0.87843747 0.88240453 0.88116153 0.88289652 0.88603812]
+LBM simulation values 
+ [0.823  0.978  0.97   0.8487 0.9473]
+
+Training set score (R2): 0.1090
+
+Test data set:
+
+R2 = -0.1983
+MSE = 0.0050
+MAE = 0.0671

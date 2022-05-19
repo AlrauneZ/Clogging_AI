@@ -1,0 +1,82 @@
+
+################################################
+Performance Testing for Clogging 
+under favorable conditions
+################################################
+
+################################################
+Decision Tree algorithm
+################################################
+
+Selected Hyperparameters: 
+ max_depth  =  5
+ min_samples_split = 2
+
+AI predicted values: 
+ [ 1.  1.  1.  1. -1. -1.  1. -1.]
+LBM simulation values 
+ [ 1.  1.  1.  1. -1. -1.  1. -1.]
+
+Training data set score (R2): 0.9863
+
+Test data set:
+R2 = 1.0000
+MSE = 0.0000
+MAE = 0.0000
+
+################################################
+Random Forest
+################################################
+
+AI predicted values: 
+ [ 1.  1.  1.  1. -1. -1.  1. -1.]
+LBM simulation values 
+ [ 1.  1.  1.  1. -1. -1.  1. -1.]
+
+Training data set score (R2): 1.0000
+
+Test data set:
+R2 = 1.0000
+MSE = 0.0000
+MAE = 0.0000
+
+################################################
+Performance Testing for Clogging 
+under unfavorable conditions
+################################################
+
+################################################
+Decision Tree algorithm
+################################################
+
+Selected Hyperparameters: 
+ max_depth  =  3
+ min_samples_split = 2
+
+AI predicted values: 
+ [-1. -1. -1. -1. -1.]
+LBM simulation values 
+ [-1. -1. -1. -1. -1.]
+
+Training data set score (R2): 1.0000
+
+Test data set:
+R2 = 1.0000
+MSE = 0.0000
+MAE = 0.0000
+
+################################################
+Random Forest
+################################################
+
+AI predicted values: 
+ [-1. -1. -1. -1. -1.]
+LBM simulation values 
+ [-1. -1. -1. -1. -1.]
+
+Training data set score (R2): 1.0000
+
+Test data set:
+R2 = 1.0000
+MSE = 0.0000
+MAE = 0.0000

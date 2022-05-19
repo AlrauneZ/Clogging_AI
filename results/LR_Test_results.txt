@@ -1,0 +1,1143 @@
+####################################################
+Performance Testing for Linear Regression algorithm 
+ under favorable conditions
+####################################################
+
+#####################################
+Output Parameter: Coordination number
+
+Selected Hyperparameters: 
+ alpha  =  0.1
+
+AI predicted values: 
+ [0.68301435 0.53831654 0.48564807 0.53752776 1.09817621 1.03621789
+ 1.85010668 1.12460471]
+LBM simulation values 
+ [0.92307692 0.76923077 0.33333333 0.66666667 2.27       0.509
+ 1.343      0.223     ]
+
+Training data set score (R2): 0.2831
+
+Test data set:
+R2 = 0.0658
+MSE = 0.3590
+MAE = 0.4825
+
+#####################################
+Output Parameter: Surface coverage
+
+Selected Hyperparameters: 
+ alpha  =  1
+
+AI predicted values: 
+ [0.09957573 0.11955927 0.14703318 0.1280934  0.1859845  0.17856398
+ 0.16104984 0.25085233]
+LBM simulation values 
+ [0.125  0.05   0.05   0.125  0.54   0.157  0.0675 0.066 ]
+
+Training data set score (R2): 0.1501
+
+Test data set:
+R2 = 0.0192
+MSE = 0.0230
+MAE = 0.1061
+
+#####################################
+Output Parameter: Conductivity
+
+Selected Hyperparameters: 
+ alpha  =  0.01
+
+AI predicted values: 
+ [0.1322721  0.22305529 0.24352648 0.20623026 0.38879037 0.41418305
+ 0.16555528 0.55287711]
+LBM simulation values 
+ [0.06988273 0.08890198 0.07712766 0.08223321 0.186      0.634
+ 0.0959     0.839     ]
+
+Training data set score (R2): 0.5720
+
+Test data set:
+R2 = 0.6221
+MSE = 0.0301
+MAE = 0.1582
+
+#####################################
+Output Parameter: Void fraction
+
+Selected Hyperparameters: 
+ alpha  =  10
+
+AI predicted values: 
+ [0.92500472 0.92558939 0.9142233  0.91710137 0.91473992 0.91704557
+ 0.91268756 0.89903852]
+LBM simulation values 
+ [0.89915035 0.94957517 0.96218138 0.91175656 0.72       0.94
+ 0.954      0.986     ]
+
+Training data set score (R2): 0.0133
+
+Test data set:
+R2 = -0.0490
+MSE = 0.0064
+MAE = 0.0561
+####################################################
+Performance Testing for Linear Regression algorithm 
+ under unfavorable conditions
+####################################################
+
+#####################################
+Output Parameter: Coordination number
+
+Selected Hyperparameters: 
+ alpha  =  0.01
+
+AI predicted values: 
+ [1.32377837 1.10591412 1.05488975 1.26491259 1.16876654]
+LBM simulation values 
+ [2.17  0.195 0.244 2.18  0.565]
+
+Training data set score (R2): 0.3448
+
+Test data set:
+R2 = 0.1785
+MSE = 0.6811
+MAE = 0.8174
+
+#####################################
+Output Parameter: Surface coverage
+
+Selected Hyperparameters: 
+ alpha  =  100
+
+AI predicted values: 
+ [0.20886772 0.21817467 0.17167079 0.20945952 0.21601071]
+LBM simulation values 
+ [0.215  0.065  0.077  0.3375 0.278 ]
+
+Training data set score (R2): 0.0621
+
+Test data set:
+R2 = 0.0979
+MSE = 0.0105
+MAE = 0.0888
+
+#####################################
+Output Parameter: Conductivity
+
+Selected Hyperparameters: 
+ alpha  =  0.01
+
+AI predicted values: 
+ [0.58399456 0.71378144 0.62602682 0.69762845 0.77279004]
+LBM simulation values 
+ [0.309  0.874  0.88   0.4791 0.8986]
+
+Training data set score (R2): 0.7056
+
+Test data set:
+R2 = 0.2432
+MSE = 0.0459
+MAE = 0.2067
+
+#####################################
+Output Parameter: Void fraction
+
+Selected Hyperparameters: 
+ alpha  =  0.01
+
+AI predicted values: 
+ [0.87087684 0.87849899 0.89894429 0.90748054 0.912086  ]
+LBM simulation values 
+ [0.823  0.978  0.97   0.8487 0.9473]
+
+Training data set score (R2): 0.3096
+
+Test data set:
+R2 = -0.0504
+MSE = 0.0044
+MAE = 0.0625
+########################################
+Decision Tree - Hyper parameter testing: 
+unfavorable conditions
+
+########################################
+Parameter CN
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.64 for max_depth = 2.0 and min_samples_split = 3.0
+
+Iterations: 1000
+Maximum score 0.62 for max_depth = 2.0 and min_samples_split = 8.0
+
+Iterations: 2000
+Maximum score 0.62 for max_depth = 2.0 and min_samples_split = 9.0
+
+########################################
+Parameter SC
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.13 for max_depth = 4.0 and min_samples_split = 2.0
+
+Iterations: 1000
+Maximum score 0.09 for max_depth = 4.0 and min_samples_split = 2.0
+
+Iterations: 2000
+Maximum score 0.05 for max_depth = 7.0 and min_samples_split = 7.0
+
+########################################
+Parameter HC
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.93 for max_depth = 18.0 and min_samples_split = 9.0
+
+Iterations: 1000
+Maximum score 0.93 for max_depth = 14.0 and min_samples_split = 9.0
+
+Iterations: 2000
+Maximum score 0.93 for max_depth = 19.0 and min_samples_split = 8.0
+
+########################################
+Parameter VF
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.64 for max_depth = 5.0 and min_samples_split = 2.0
+
+Iterations: 1000
+Maximum score 0.62 for max_depth = 5.0 and min_samples_split = 2.0
+
+Iterations: 2000
+Maximum score 0.60 for max_depth = 5.0 and min_samples_split = 3.0
+########################################
+Decision Tree - Hyper parameter testing: 
+unfavorable conditions
+
+########################################
+Parameter CN
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.64 for max_depth = 2.0 and min_samples_split = 3.0
+
+Iterations: 1000
+Maximum score 0.62 for max_depth = 2.0 and min_samples_split = 8.0
+
+Iterations: 2000
+Maximum score 0.62 for max_depth = 2.0 and min_samples_split = 9.0
+
+########################################
+Parameter SC
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.13 for max_depth = 4.0 and min_samples_split = 2.0
+
+Iterations: 1000
+Maximum score 0.09 for max_depth = 4.0 and min_samples_split = 2.0
+
+Iterations: 2000
+Maximum score 0.05 for max_depth = 7.0 and min_samples_split = 7.0
+
+########################################
+Parameter HC
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.93 for max_depth = 18.0 and min_samples_split = 9.0
+
+Iterations: 1000
+Maximum score 0.93 for max_depth = 14.0 and min_samples_split = 9.0
+
+Iterations: 2000
+Maximum score 0.93 for max_depth = 19.0 and min_samples_split = 8.0
+
+########################################
+Parameter VF
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.64 for max_depth = 5.0 and min_samples_split = 2.0
+
+Iterations: 1000
+Maximum score 0.62 for max_depth = 5.0 and min_samples_split = 2.0
+
+Iterations: 2000
+Maximum score 0.60 for max_depth = 5.0 and min_samples_split = 3.0
+########################################
+Decision Tree - Hyper parameter testing: 
+unfavorable conditions
+
+########################################
+Parameter CN
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.64 for max_depth = 2.0 and min_samples_split = 3.0
+
+Iterations: 1000
+Maximum score 0.62 for max_depth = 2.0 and min_samples_split = 8.0
+
+Iterations: 2000
+Maximum score 0.62 for max_depth = 2.0 and min_samples_split = 9.0
+
+########################################
+Parameter SC
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.13 for max_depth = 4.0 and min_samples_split = 2.0
+
+Iterations: 1000
+Maximum score 0.09 for max_depth = 4.0 and min_samples_split = 2.0
+
+Iterations: 2000
+Maximum score 0.05 for max_depth = 7.0 and min_samples_split = 7.0
+
+########################################
+Parameter HC
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.93 for max_depth = 18.0 and min_samples_split = 9.0
+
+Iterations: 1000
+Maximum score 0.93 for max_depth = 14.0 and min_samples_split = 9.0
+
+Iterations: 2000
+Maximum score 0.93 for max_depth = 19.0 and min_samples_split = 8.0
+
+########################################
+Parameter VF
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.64 for max_depth = 5.0 and min_samples_split = 2.0
+
+Iterations: 1000
+Maximum score 0.62 for max_depth = 5.0 and min_samples_split = 2.0
+
+Iterations: 2000
+Maximum score 0.60 for max_depth = 5.0 and min_samples_split = 3.0
+########################################
+Decision Tree - Hyper parameter testing: 
+unfavorable conditions
+
+########################################
+Parameter CN
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.64 for max_depth = 2.0 and min_samples_split = 3.0
+########################################
+Decision Tree - Hyper parameter testing: 
+unfavorable conditions
+
+########################################
+Parameter CN
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.64 for max_depth = 2.0 and min_samples_split = 3.0
+
+Iterations: 1000
+Maximum score 0.62 for max_depth = 2.0 and min_samples_split = 8.0
+
+Iterations: 2000
+Maximum score 0.62 for max_depth = 2.0 and min_samples_split = 9.0
+
+########################################
+Parameter SC
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.13 for max_depth = 4.0 and min_samples_split = 2.0
+
+Iterations: 1000
+Maximum score 0.09 for max_depth = 4.0 and min_samples_split = 2.0
+
+Iterations: 2000
+Maximum score 0.05 for max_depth = 7.0 and min_samples_split = 7.0
+
+########################################
+Parameter HC
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.93 for max_depth = 18.0 and min_samples_split = 9.0
+
+Iterations: 1000
+Maximum score 0.93 for max_depth = 14.0 and min_samples_split = 9.0
+
+Iterations: 2000
+Maximum score 0.93 for max_depth = 19.0 and min_samples_split = 8.0
+
+########################################
+Parameter VF
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.64 for max_depth = 5.0 and min_samples_split = 2.0
+
+Iterations: 1000
+Maximum score 0.62 for max_depth = 5.0 and min_samples_split = 2.0
+
+Iterations: 2000
+Maximum score 0.60 for max_depth = 5.0 and min_samples_split = 3.0
+########################################
+Decision Tree - Hyper parameter testing: 
+unfavorable conditions
+
+########################################
+Parameter CN
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.64 for max_depth = 2.0 and min_samples_split = 3.0
+
+Iterations: 1000
+Maximum score 0.62 for max_depth = 2.0 and min_samples_split = 8.0
+
+Iterations: 2000
+Maximum score 0.62 for max_depth = 2.0 and min_samples_split = 9.0
+
+########################################
+Parameter SC
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.13 for max_depth = 4.0 and min_samples_split = 2.0
+
+Iterations: 1000
+Maximum score 0.09 for max_depth = 4.0 and min_samples_split = 2.0
+
+Iterations: 2000
+Maximum score 0.05 for max_depth = 7.0 and min_samples_split = 7.0
+
+########################################
+Parameter HC
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.93 for max_depth = 18.0 and min_samples_split = 9.0
+
+Iterations: 1000
+Maximum score 0.93 for max_depth = 14.0 and min_samples_split = 9.0
+
+Iterations: 2000
+Maximum score 0.93 for max_depth = 19.0 and min_samples_split = 8.0
+
+########################################
+Parameter VF
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.64 for max_depth = 5.0 and min_samples_split = 2.0
+
+Iterations: 1000
+Maximum score 0.62 for max_depth = 5.0 and min_samples_split = 2.0
+
+Iterations: 2000
+Maximum score 0.60 for max_depth = 5.0 and min_samples_split = 3.0
+########################################
+Decision Tree - Hyper parameter testing: 
+unfavorable conditions
+
+########################################
+Parameter CN
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.64 for max_depth = 2.0 and min_samples_split = 3.0
+
+Iterations: 1000
+Maximum score 0.62 for max_depth = 2.0 and min_samples_split = 8.0
+
+Iterations: 2000
+Maximum score 0.62 for max_depth = 2.0 and min_samples_split = 9.0
+
+########################################
+Parameter SC
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.13 for max_depth = 4.0 and min_samples_split = 2.0
+
+Iterations: 1000
+Maximum score 0.09 for max_depth = 4.0 and min_samples_split = 2.0
+
+Iterations: 2000
+Maximum score 0.05 for max_depth = 7.0 and min_samples_split = 7.0
+
+########################################
+Parameter HC
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.93 for max_depth = 18.0 and min_samples_split = 9.0
+
+Iterations: 1000
+Maximum score 0.93 for max_depth = 14.0 and min_samples_split = 9.0
+
+Iterations: 2000
+Maximum score 0.93 for max_depth = 19.0 and min_samples_split = 8.0
+
+########################################
+Parameter VF
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.64 for max_depth = 5.0 and min_samples_split = 2.0
+
+Iterations: 1000
+Maximum score 0.62 for max_depth = 5.0 and min_samples_split = 2.0
+
+Iterations: 2000
+Maximum score 0.60 for max_depth = 5.0 and min_samples_split = 3.0
+########################################
+Decision Tree - Hyper parameter testing: 
+unfavorable conditions
+
+########################################
+Parameter CN
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.64 for max_depth = 2.0 and min_samples_split = 3.0
+
+Iterations: 1000
+Maximum score 0.62 for max_depth = 2.0 and min_samples_split = 8.0
+
+Iterations: 2000
+Maximum score 0.62 for max_depth = 2.0 and min_samples_split = 9.0
+
+########################################
+Parameter SC
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.13 for max_depth = 4.0 and min_samples_split = 2.0
+
+Iterations: 1000
+Maximum score 0.09 for max_depth = 4.0 and min_samples_split = 2.0
+
+Iterations: 2000
+Maximum score 0.05 for max_depth = 7.0 and min_samples_split = 7.0
+
+########################################
+Parameter HC
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.93 for max_depth = 18.0 and min_samples_split = 9.0
+
+Iterations: 1000
+Maximum score 0.93 for max_depth = 14.0 and min_samples_split = 9.0
+
+Iterations: 2000
+Maximum score 0.93 for max_depth = 19.0 and min_samples_split = 8.0
+
+########################################
+Parameter VF
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.64 for max_depth = 5.0 and min_samples_split = 2.0
+
+Iterations: 1000
+Maximum score 0.62 for max_depth = 5.0 and min_samples_split = 2.0
+
+Iterations: 2000
+Maximum score 0.60 for max_depth = 5.0 and min_samples_split = 3.0
+########################################
+Decision Tree - Hyper parameter testing: 
+unfavorable conditions
+
+########################################
+Parameter CN
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.64 for max_depth = 2.0 and min_samples_split = 3.0
+
+Iterations: 1000
+Maximum score 0.62 for max_depth = 2.0 and min_samples_split = 8.0
+
+Iterations: 2000
+Maximum score 0.62 for max_depth = 2.0 and min_samples_split = 9.0
+
+########################################
+Parameter SC
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.13 for max_depth = 4.0 and min_samples_split = 2.0
+
+Iterations: 1000
+Maximum score 0.09 for max_depth = 4.0 and min_samples_split = 2.0
+
+Iterations: 2000
+Maximum score 0.05 for max_depth = 7.0 and min_samples_split = 7.0
+
+########################################
+Parameter HC
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.93 for max_depth = 18.0 and min_samples_split = 9.0
+
+Iterations: 1000
+Maximum score 0.93 for max_depth = 14.0 and min_samples_split = 9.0
+
+Iterations: 2000
+Maximum score 0.93 for max_depth = 19.0 and min_samples_split = 8.0
+
+########################################
+Parameter VF
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.64 for max_depth = 5.0 and min_samples_split = 2.0
+
+Iterations: 1000
+Maximum score 0.62 for max_depth = 5.0 and min_samples_split = 2.0
+
+Iterations: 2000
+Maximum score 0.60 for max_depth = 5.0 and min_samples_split = 3.0
+########################################
+Decision Tree - Hyper parameter testing: 
+unfavorable conditions
+
+########################################
+Parameter CN
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.64 for max_depth = 2.0 and min_samples_split = 3.0
+
+Iterations: 1000
+Maximum score 0.62 for max_depth = 2.0 and min_samples_split = 8.0
+
+Iterations: 2000
+Maximum score 0.62 for max_depth = 2.0 and min_samples_split = 9.0
+
+########################################
+Parameter SC
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.13 for max_depth = 4.0 and min_samples_split = 2.0
+
+Iterations: 1000
+Maximum score 0.09 for max_depth = 4.0 and min_samples_split = 2.0
+
+Iterations: 2000
+Maximum score 0.05 for max_depth = 7.0 and min_samples_split = 7.0
+
+########################################
+Parameter HC
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.93 for max_depth = 18.0 and min_samples_split = 9.0
+
+Iterations: 1000
+Maximum score 0.93 for max_depth = 14.0 and min_samples_split = 9.0
+
+Iterations: 2000
+Maximum score 0.93 for max_depth = 19.0 and min_samples_split = 8.0
+
+########################################
+Parameter VF
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.64 for max_depth = 5.0 and min_samples_split = 2.0
+
+Iterations: 1000
+Maximum score 0.62 for max_depth = 5.0 and min_samples_split = 2.0
+
+Iterations: 2000
+Maximum score 0.60 for max_depth = 5.0 and min_samples_split = 3.0
+########################################
+Decision Tree - Hyper parameter testing: 
+unfavorable conditions
+
+########################################
+Parameter CN
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.64 for max_depth = 2.0 and min_samples_split = 3.0
+
+Iterations: 1000
+Maximum score 0.62 for max_depth = 2.0 and min_samples_split = 8.0
+
+Iterations: 2000
+Maximum score 0.62 for max_depth = 2.0 and min_samples_split = 9.0
+
+########################################
+Parameter SC
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.13 for max_depth = 4.0 and min_samples_split = 2.0
+
+Iterations: 1000
+Maximum score 0.09 for max_depth = 4.0 and min_samples_split = 2.0
+
+Iterations: 2000
+Maximum score 0.05 for max_depth = 7.0 and min_samples_split = 7.0
+
+########################################
+Parameter HC
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.93 for max_depth = 18.0 and min_samples_split = 9.0
+
+Iterations: 1000
+Maximum score 0.93 for max_depth = 14.0 and min_samples_split = 9.0
+
+Iterations: 2000
+Maximum score 0.93 for max_depth = 19.0 and min_samples_split = 8.0
+
+########################################
+Parameter VF
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.64 for max_depth = 5.0 and min_samples_split = 2.0
+
+Iterations: 1000
+Maximum score 0.62 for max_depth = 5.0 and min_samples_split = 2.0
+
+Iterations: 2000
+Maximum score 0.60 for max_depth = 5.0 and min_samples_split = 3.0
+########################################
+Decision Tree - Hyper parameter testing: 
+unfavorable conditions
+
+########################################
+Parameter CN
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.64 for max_depth = 2.0 and min_samples_split = 3.0
+
+Iterations: 1000
+Maximum score 0.62 for max_depth = 2.0 and min_samples_split = 8.0
+
+Iterations: 2000
+Maximum score 0.62 for max_depth = 2.0 and min_samples_split = 9.0
+
+########################################
+Parameter SC
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.13 for max_depth = 4.0 and min_samples_split = 2.0
+
+Iterations: 1000
+Maximum score 0.09 for max_depth = 4.0 and min_samples_split = 2.0
+
+Iterations: 2000
+Maximum score 0.05 for max_depth = 7.0 and min_samples_split = 7.0
+
+########################################
+Parameter HC
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.93 for max_depth = 18.0 and min_samples_split = 9.0
+
+Iterations: 1000
+Maximum score 0.93 for max_depth = 14.0 and min_samples_split = 9.0
+
+Iterations: 2000
+Maximum score 0.93 for max_depth = 19.0 and min_samples_split = 8.0
+
+########################################
+Parameter VF
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.64 for max_depth = 5.0 and min_samples_split = 2.0
+
+Iterations: 1000
+Maximum score 0.62 for max_depth = 5.0 and min_samples_split = 2.0
+
+Iterations: 2000
+Maximum score 0.60 for max_depth = 5.0 and min_samples_split = 3.0
+########################################
+Decision Tree - Hyper parameter testing: 
+favorable conditions
+
+########################################
+Parameter CN
+
+Full
+Maximum score 1.00 for max_depth = 8.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.64 for max_depth = 2.0 and min_samples_split = 5.0
+
+Iterations: 1000
+Maximum score 0.64 for max_depth = 2.0 and min_samples_split = 9.0
+
+Iterations: 2000
+Maximum score 0.63 for max_depth = 2.0 and min_samples_split = 7.0
+
+########################################
+Parameter SC
+
+Full
+Maximum score 1.00 for max_depth = 8.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score -0.13 for max_depth = 14.0 and min_samples_split = 6.0
+
+Iterations: 1000
+Maximum score -0.24 for max_depth = 11.0 and min_samples_split = 6.0
+
+Iterations: 2000
+Maximum score -0.22 for max_depth = 8.0 and min_samples_split = 6.0
+
+########################################
+Parameter HC
+
+Full
+Maximum score 1.00 for max_depth = 8.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.80 for max_depth = 9.0 and min_samples_split = 2.0
+
+Iterations: 1000
+Maximum score 0.76 for max_depth = 17.0 and min_samples_split = 3.0
+
+Iterations: 2000
+Maximum score 0.74 for max_depth = 12.0 and min_samples_split = 3.0
+
+########################################
+Parameter VF
+
+Full
+Maximum score 1.00 for max_depth = 8.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score -0.31 for max_depth = 13.0 and min_samples_split = 7.0
+
+Iterations: 1000
+Maximum score -0.32 for max_depth = 17.0 and min_samples_split = 7.0
+
+Iterations: 2000
+Maximum score -0.32 for max_depth = 17.0 and min_samples_split = 7.0
+########################################
+Decision Tree - Hyper parameter testing: 
+favorable conditions
+
+########################################
+Parameter CN
+
+Full
+Maximum score 1.00 for max_depth = 8.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.64 for max_depth = 2.0 and min_samples_split = 5.0
+
+Iterations: 1000
+Maximum score 0.64 for max_depth = 2.0 and min_samples_split = 9.0
+
+Iterations: 2000
+Maximum score 0.63 for max_depth = 2.0 and min_samples_split = 7.0
+
+########################################
+Parameter SC
+
+Full
+Maximum score 1.00 for max_depth = 8.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score -0.13 for max_depth = 14.0 and min_samples_split = 6.0
+
+Iterations: 1000
+Maximum score -0.24 for max_depth = 11.0 and min_samples_split = 6.0
+
+Iterations: 2000
+Maximum score -0.22 for max_depth = 8.0 and min_samples_split = 6.0
+
+########################################
+Parameter HC
+
+Full
+Maximum score 1.00 for max_depth = 8.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.80 for max_depth = 9.0 and min_samples_split = 2.0
+
+Iterations: 1000
+Maximum score 0.76 for max_depth = 17.0 and min_samples_split = 3.0
+
+Iterations: 2000
+Maximum score 0.74 for max_depth = 12.0 and min_samples_split = 3.0
+
+########################################
+Parameter VF
+
+Full
+Maximum score 1.00 for max_depth = 8.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score -0.31 for max_depth = 13.0 and min_samples_split = 7.0
+
+Iterations: 1000
+Maximum score -0.32 for max_depth = 17.0 and min_samples_split = 7.0
+
+Iterations: 2000
+Maximum score -0.32 for max_depth = 17.0 and min_samples_split = 7.0
+########################################
+Decision Tree - Hyper parameter testing: 
+unfavorable conditions
+
+########################################
+Parameter CN
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.64 for max_depth = 2.0 and min_samples_split = 3.0
+
+Iterations: 1000
+Maximum score 0.62 for max_depth = 2.0 and min_samples_split = 8.0
+
+Iterations: 2000
+Maximum score 0.62 for max_depth = 2.0 and min_samples_split = 9.0
+
+########################################
+Parameter SC
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.13 for max_depth = 4.0 and min_samples_split = 2.0
+
+Iterations: 1000
+Maximum score 0.09 for max_depth = 4.0 and min_samples_split = 2.0
+
+Iterations: 2000
+Maximum score 0.05 for max_depth = 7.0 and min_samples_split = 7.0
+
+########################################
+Parameter HC
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.93 for max_depth = 18.0 and min_samples_split = 9.0
+
+Iterations: 1000
+Maximum score 0.93 for max_depth = 14.0 and min_samples_split = 9.0
+
+Iterations: 2000
+Maximum score 0.93 for max_depth = 19.0 and min_samples_split = 8.0
+
+########################################
+Parameter VF
+
+Full
+Maximum score 1.00 for max_depth = 7.0 and min_samples_split = 2.0
+
+Iterations: 500
+Maximum score 0.64 for max_depth = 5.0 and min_samples_split = 2.0
+
+Iterations: 1000
+Maximum score 0.62 for max_depth = 5.0 and min_samples_split = 2.0
+
+Iterations: 2000
+Maximum score 0.60 for max_depth = 5.0 and min_samples_split = 3.0
+[4 5 0 1 3 2]
+[1 4 5 0 3 2]
+[1 4 5 0 2 3]
+[1 4 5 0 3 2]
+[4 5 0 1 3 2]
+[5 4 1 3 0 2]
+[4 5 1 0 2 3]
+[5 4 0 1 2 3]
+[4 5 0 1 3 2]
+[1 4 5 0 3 2]
+[1 4 5 0 2 3]
+[1 4 5 0 3 2]
+[4 5 0 1 3 2]
+[5 4 1 3 0 2]
+[4 5 1 0 2 3]
+[5 4 0 1 2 3]
+[5 4 0 1 2 3]
+[5 4 0 1 2 3]
+total detected mass for ow1: 0.0004300938838011981
+total detected mass for ow2: 0.0003657762215275414
+total detected mass for ow3: 0.000550668467507345
+total detected mass for ow4: 0.001085244108463463
+total detected mass for ow5: 0.0010464921556290674
+total detected mass for ow6: 0.0007626365782767907
+total detected mass for ow1: 0.0004300938838011981
+total detected mass for ow2: 0.0003657762215275414
+total detected mass for ow3: 0.000550668467507345
+total detected mass for ow4: 0.001085244108463463
+total detected mass for ow5: 0.0010464921556290674
+total detected mass for ow6: 0.0007626365782767907
+total detected mass for ow1: 0.0004300938838011981
+total detected mass for ow2: 0.0003657762215275414
+total detected mass for ow3: 0.000550668467507345
+total detected mass for ow4: 0.001085244108463463
+total detected mass for ow5: 0.0010464921556290674
+total detected mass for ow6: 0.0007626365782767907
+total detected mass for ow1: 0.0004300938838011981
+total detected mass for ow2: 0.0003657762215275414
+total detected mass for ow3: 0.000550668467507345
+total detected mass for ow4: 0.001085244108463463
+total detected mass for ow5: 0.0010464921556290674
+total detected mass for ow6: 0.0007626365782767907
+total detected mass for ow1: 0.0004300938838011981
+total detected mass for ow2: 0.0003657762215275414
+total detected mass for ow3: 0.000550668467507345
+total detected mass for ow4: 0.001085244108463463
+total detected mass for ow5: 0.0010464921556290674
+total detected mass for ow6: 0.0007626365782767907
+total detected mass for ow1: 0.0004300938838011981
+total detected mass for ow2: 0.0003657762215275414
+total detected mass for ow3: 0.000550668467507345
+total detected mass for ow4: 0.001085244108463463
+total detected mass for ow5: 0.0010464921556290674
+total detected mass for ow6: 0.0007626365782767907
+total detected mass for ow1: 0.003440751070409585
+total detected mass for ow2: 0.002926209772220331
+total detected mass for ow3: 0.00440534774005876
+total detected mass for ow4: 0.008681952867707704
+total detected mass for ow5: 0.008371937245032539
+total detected mass for ow6: 0.006101092626214326
+total detected mass for ow1: 0.003440751070409585
+total detected mass for ow2: 0.002926209772220331
+total detected mass for ow3: 0.00440534774005876
+total detected mass for ow4: 0.008681952867707704
+total detected mass for ow5: 0.008371937245032539
+total detected mass for ow6: 0.006101092626214326
+total detected mass for ow1: 0.003440751070409585
+total detected mass for ow2: 0.002926209772220331
+total detected mass for ow3: 0.00440534774005876
+total detected mass for ow4: 0.008681952867707704
+total detected mass for ow5: 0.008371937245032539
+total detected mass for ow6: 0.006101092626214326
+total detected mass for ow1: 0.003440751070409585
+total detected mass for ow2: 0.002926209772220331
+total detected mass for ow3: 0.00440534774005876
+total detected mass for ow4: 0.008681952867707704
+total detected mass for ow5: 0.008371937245032539
+total detected mass for ow6: 0.006101092626214326
+total detected mass for ow1: 0.003440751070409585
+2.3734764453964385
+total detected mass for ow2: 0.002926209772220331
+4.877103087779779
+total detected mass for ow3: 0.00440534774005876
+2.725285416285892
+total detected mass for ow4: 0.008681952867707704
+2.7671296536108865
+total detected mass for ow5: 0.008371937245032539
+3.9595538448215337
+total detected mass for ow6: 0.006101092626214326
+5.204035470729178

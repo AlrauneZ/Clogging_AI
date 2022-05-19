@@ -1,0 +1,174 @@
+################################################
+Performance Testing for Decision Tree algorithm 
+under favorable conditions
+################################################
+
+#####################################
+Output Parameter: Coordination number
+
+Selected Hyperparameters: 
+ max_depth  =  2
+ min_samples_split = 5
+
+AI predicted values: 
+ [  0.93377211 146.18602694 146.18602694 146.18602694 913.57411765
+ 214.406875   913.57411765 214.406875  ]
+LBM simulation values 
+ [   0.92307692    0.76923077    0.33333333    0.66666667    2.27
+  509.         1343.          223.        ]
+
+Training data set score (R2): 0.2755
+
+Test data set:
+R2 = 0.2585
+MSE = 145666.9589
+MAE = 260.0895
+
+#####################################
+Output Parameter: Surface coverage
+
+Selected Hyperparameters: 
+ max_depth  =  8
+ min_samples_split = 6
+
+AI predicted values: 
+ [  0.08333333  41.71666667  25.03333333  83.35         0.31166667
+   0.1275     142.4         80.81938   ]
+LBM simulation values 
+ [125.       0.05     0.05   125.       0.54   157.       0.0675  66.    ]
+
+Training data set score (R2): 0.5850
+
+Test data set:
+R2 = -1.0117
+MSE = 8098.2953
+MAE = 68.4337
+
+#####################################
+Output Parameter: Conductivity
+
+Selected Hyperparameters: 
+ max_depth  =  9
+ min_samples_split = 2
+
+AI predicted values: 
+ [  0.09242138   0.08793751   0.0653089    0.08705418   0.29
+   0.62         0.0716     797.        ]
+LBM simulation values 
+ [  0.06988273   0.08890198   0.07712766   0.08223321 186.
+ 634.           0.0959     839.        ]
+
+Training data set score (R2): 1.0000
+
+Test data set:
+R2 = 0.4507
+MSE = 54677.8037
+MAE = 107.6443
+
+#####################################
+Output Parameter: Void fraction
+
+Selected Hyperparameters: 
+ max_depth  =  8
+ min_samples_split = 7
+
+AI predicted values: 
+ [  0.91175656   0.94201145   0.88654414   0.926884   905.5
+ 905.5        184.526      968.        ]
+LBM simulation values 
+ [  0.89915035   0.94957517   0.96218138   0.91175656   0.72
+   0.94       954.         986.        ]
+
+Training data set score (R2): 0.6992
+
+Test data set:
+R2 = -0.5819
+MSE = 278658.7356
+MAE = 324.6156
+################################################
+Performance Testing for Decision Tree algorithm 
+under unfavorable conditions
+################################################
+
+#####################################
+Output Parameter: Coordination number
+
+Selected Hyperparameters: 
+ max_depth  =  2
+ min_samples_split = 3
+
+AI predicted values: 
+ [341.03764706  83.24552639  83.24552639 965.28716471 294.76291713]
+LBM simulation values 
+ [  2.17 195.   244.     2.18 565.  ]
+
+Training data set score (R2): 0.1742
+
+Test data set:
+R2 = -4.4055
+MSE = 230753.1674
+MAE = 368.9442
+
+#####################################
+Output Parameter: Surface coverage
+
+Selected Hyperparameters: 
+ max_depth  =  7
+ min_samples_split = 2
+
+AI predicted values: 
+ [248.       0.0956   0.05     0.2715 328.    ]
+LBM simulation values 
+ [215.      65.      77.       0.3375 278.    ]
+
+Training data set score (R2): 1.0000
+
+Test data set:
+R2 = 0.7407
+MSE = 2744.5776
+MAE = 44.9841
+
+#####################################
+Output Parameter: Conductivity
+
+Selected Hyperparameters: 
+ max_depth  =  5
+ min_samples_split = 8
+
+AI predicted values: 
+ [141.414        0.88825    756.55937143   0.5059       0.88825   ]
+LBM simulation values 
+ [309.     874.       0.88     0.4791   0.8986]
+
+Training data set score (R2): 0.5847
+
+Test data set:
+R2 = -1.3539
+MSE = 272292.1017
+MAE = 359.2829
+
+#####################################
+Output Parameter: Void fraction
+
+Selected Hyperparameters: 
+ max_depth  =  4
+ min_samples_split = 4
+
+AI predicted values: 
+ [403.405  489.99   489.99   124.599    0.9406]
+LBM simulation values 
+ [823.     978.       0.97     0.8487   0.9473]
+
+Training data set score (R2): 0.4792
+
+Test data set:
+R2 = 0.3198
+MSE = 133733.6843
+MAE = 304.0764
+
+Training procedure for decision tree algorithm under favorable conditions
+
+Maximum score 0.92 for max_depth = 12 and min_samples_split = 2
+
+Maximum score 1.00 for max_depth = 12 and min_samples_split = 2
+DC Training finished.
