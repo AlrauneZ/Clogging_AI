@@ -9,10 +9,10 @@ params = ['CN','SC','HC','VF']
 file_results = '../data/Results_Testing_{}.csv'#.format(condition)
 
 title_text = ['Coordination number','Surface coverage','Conductivity','Void fraction']
-method_names =['ANN','RBFNN','DT','RF','LR','SVR']
-colors=['C3','C1','C0','C2','C4','C5']
+method_names =['ANN','DT','RF','LR','SVR']
+#method_names =['ANN','RBFNN','DT','RF','LR','SVR']
+colors=['C3','C0','C2','C1','C5']
 y_pos = np.arange(len(method_names))
-
 
 ###############################################################################
 ### Plot

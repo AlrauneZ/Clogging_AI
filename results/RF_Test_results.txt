@@ -12,18 +12,18 @@ Selected Hyperparameters:
  random state = 42
 
 AI predicted values: 
- [1.0476004  0.61596444 0.46218061 0.62757697 1.82414    0.39322444
+ [1.04093373 0.62326778 0.46218061 0.62757697 1.82414    0.39244889
  2.00868    0.24255   ]
 LBM simulation values 
  [0.92307692 0.76923077 0.33333333 0.66666667 2.27       0.509
  1.343      0.223     ]
 
-Training data set score (R2): 0.9596
+Training data set score (R2): 0.9598
 
 Test data set:
-R2 = 0.7681
-MSE = 0.0891
-MAE = 0.2116
+R2 = 0.7693
+MSE = 0.0887
+MAE = 0.2099
 
 #####################################
 Output Parameter: Surface coverage
@@ -34,16 +34,16 @@ Selected Hyperparameters:
  random state = 42
 
 AI predicted values: 
- [0.09125  0.091025 0.10289  0.10003  0.491935 0.172394 0.112025 0.090085]
+ [0.09125  0.090525 0.10389  0.10003  0.491935 0.172394 0.112075 0.090085]
 LBM simulation values 
  [0.125  0.05   0.05   0.125  0.54   0.157  0.0675 0.066 ]
 
-Training data set score (R2): 0.9577
+Training data set score (R2): 0.9576
 
 Test data set:
-R2 = 0.9394
+R2 = 0.9390
 MSE = 0.0014
-MAE = 0.0356
+MAE = 0.0357
 
 #####################################
 Output Parameter: Conductivity
@@ -54,7 +54,7 @@ Selected Hyperparameters:
  random state = 42
 
 AI predicted values: 
- [0.06877111 0.08033852 0.07109437 0.07662133 0.17812176 0.60986
+ [0.06870748 0.08009796 0.07113825 0.07662133 0.17929605 0.60986
  0.07943944 0.7964    ]
 LBM simulation values 
  [0.06988273 0.08890198 0.07712766 0.08223321 0.186      0.634
@@ -65,7 +65,7 @@ Training data set score (R2): 0.9960
 Test data set:
 R2 = 0.9955
 MSE = 0.0004
-MAE = 0.0140
+MAE = 0.0139
 
 #####################################
 Output Parameter: Void fraction
@@ -76,18 +76,18 @@ Selected Hyperparameters:
  random state = 42
 
 AI predicted values: 
- [0.91196997 0.93143441 0.9518089  0.9337984  0.78386    0.93878597
- 0.9090927  0.97986969]
+ [0.91234816 0.93244291 0.9518089  0.93405052 0.78306    0.93878597
+ 0.90986513 0.97986969]
 LBM simulation values 
- [0.89915035 0.94957517 0.96218138 0.91175656 0.72       0.94
+ [0.89915035 0.94957518 0.96218138 0.91175656 0.72       0.94
  0.954      0.986     ]
 
-Training data set score (R2): 0.9360
+Training data set score (R2): 0.9358
 
 Test data set:
-R2 = 0.8523
+R2 = 0.8561
 MSE = 0.0009
-MAE = 0.0224
+MAE = 0.0222
 ###################################################
 Performance Testing for Random forest algorithm 
  under unfavorable conditions
@@ -102,16 +102,17 @@ Selected Hyperparameters:
  random state = 42
 
 AI predicted values: 
- [2.060729   0.21110547 0.23083664 1.975607   0.59597639]
+ [1.55577    0.207362   0.218038   0.238989   1.908332   0.52036514
+ 2.287794   0.27069883]
 LBM simulation values 
- [2.17  0.195 0.244 2.18  0.565]
+ [1.587  0.193  0.159  0.145  1.87   0.61   2.11   0.2375]
 
-Training data set score (R2): 0.9869
+Training data set score (R2): 0.9810
 
 Test data set:
-R2 = 0.9867
-MSE = 0.0110
-MAE = 0.0748
+R2 = 0.9889
+MSE = 0.0070
+MAE = 0.0672
 
 #####################################
 Output Parameter: Surface coverage
@@ -122,16 +123,16 @@ Selected Hyperparameters:
  random state = 42
 
 AI predicted values: 
- [0.24466  0.098526 0.158647 0.194357 0.288646]
+ [0.23986  0.04868  0.072368 0.086316 0.296095 0.23487  0.171913 0.160427]
 LBM simulation values 
- [0.215  0.065  0.077  0.3375 0.278 ]
+ [0.307  0.033  0.0254 0.0248 0.212  0.253  0.202  0.1339]
 
-Training data set score (R2): 0.9625
+Training data set score (R2): 0.9567
 
 Test data set:
-R2 = 0.4989
-MSE = 0.0059
-MAE = 0.0597
+R2 = 0.7728
+MSE = 0.0025
+MAE = 0.0438
 
 #####################################
 Output Parameter: Conductivity
@@ -142,16 +143,17 @@ Selected Hyperparameters:
  random state = 42
 
 AI predicted values: 
- [0.302732 0.87259  0.87224  0.48232  0.903386]
+ [0.1423171 0.81912   0.81258   0.80883   0.36839   0.85876   0.268709
+ 0.914893 ]
 LBM simulation values 
- [0.309  0.874  0.88   0.4791 0.8986]
+ [0.166  0.864  0.828  0.83   0.428  0.86   0.205  0.9082]
 
-Training data set score (R2): 0.9959
+Training data set score (R2): 0.9954
 
 Test data set:
-R2 = 0.9996
-MSE = 0.0000
-MAE = 0.0047
+R2 = 0.9844
+MSE = 0.0014
+MAE = 0.0296
 
 #####################################
 Output Parameter: Void fraction
@@ -162,13 +164,18 @@ Selected Hyperparameters:
  random state = 42
 
 AI predicted values: 
- [0.8139   0.97709  0.96642  0.871534 0.93789 ]
+ [0.789985 0.97222  0.969234 0.965744 0.81723  0.922622 0.857784 0.96888 ]
 LBM simulation values 
- [0.823  0.978  0.97   0.8487 0.9473]
+ [0.75   0.9762 0.982  0.9852 0.845  0.918  0.8362 0.9761]
 
-Training data set score (R2): 0.9857
+Training data set score (R2): 0.9748
 
 Test data set:
-R2 = 0.9662
-MSE = 0.0001
-MAE = 0.0092
+R2 = 0.9369
+MSE = 0.0004
+MAE = 0.0172
+
+Training procedure with cross validation /n for ANN under unfavorable conditions, 1000 iterations
+
+Training for output parameter: Coordination number
+For N= 2 number of neurons, the average score is -0.352

@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import sys
@@ -8,23 +9,36 @@ sys.stdout = open('../results/DT_Test_results.txt', 'w')
 ### Load data and set algorithm parameters
 ###############################################################################
 
-
-test_sample_length = 0.9
 conditions = ['fav','unfav']
 name_output = ['Coordination number','Surface coverage','Conductivity','Void fraction']
+n_test_samples = 73
 np.set_printoptions(suppress = True)
 
 ### identified hyperparameters during Training
 max_depth_fav = [2,8,9,8]
 min_samples_split_fav = [5,6,2,7]
-max_depth_unfav = [2,7,5,4]
-min_samples_split_unfav = [3,2,8,4]
+# max_depth_unfav = [2,7,5,4]
+# min_samples_split_unfav = [3,2,8,4]
+max_depth_unfav = [2,3,4,4]
+min_samples_split_unfav = [5,5,4,3]
 # test_results = np.zeros((12,2))
+
+#file_LBM = "../data/LBM_results_{}.csv"
+# file_LBM = "../data/LBM_Results.xlsx"
+# xl = pd.ExcelFile(file_LBM)
+
+file_LBM = "../data/LBM_Results.xlsx"
+xl = pd.ExcelFile(file_LBM)
 
 for ic,cond in enumerate(conditions):
 
-    data_LBM = np.loadtxt("../data/LBM_results_{}.csv".format(cond), delimiter = ',',skiprows = 1)
-    n_test_samples = int(np.round(test_sample_length*len(data_LBM)))
+    data_LBM = pd.read_excel(xl,skiprows = [1],sheet_name=cond)
+    data_LBM = np.array(data_LBM)
+    # data_LBM = np.loadtxt("../data/LBM_results_{}.csv".format(cond), delimiter = ',',skiprows = 1)
+    # data_LBM = np.loadtxt(file_LBM.format(cond), delimiter = ',',skiprows = 1)
+
+    # data = pd.read_excel(xl,skiprows = [1],sheet_name=condition)
+    # data_LBM = np.array(data)
     
     input_data_training = data_LBM[:n_test_samples,0:4]
     output_data_training = data_LBM[:n_test_samples,4:8]

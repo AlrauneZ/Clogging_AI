@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 from sklearn.svm import SVR
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from sklearn.preprocessing import MinMaxScaler
@@ -11,9 +12,8 @@ sys.stdout = open('../results/SVR_Test_results.txt', 'w')
 
 conditions = ['fav','unfav']
 
-test_sample_length = 0.9
 name_output = ['Coordination number','Surface coverage','Conductivity','Void fraction']
-file_LBM = "../data/LBM_results_{}.csv"
+n_test_samples = 73
 np.set_printoptions(suppress = True)
 # test_results = np.zeros((12,2))
 
@@ -21,13 +21,21 @@ np.set_printoptions(suppress = True)
 C_fav = [10,100,10,100]
 gamma_fav = [1,1,1,1]
 
-C_unfav = [100,10,100,10]
-gamma_unfav = [1,100,1,0.1]
+# C_unfav = [100,10,100,10]
+# gamma_unfav = [1,100,1,0.1]
+C_unfav = [100,100,100,100]
+gamma_unfav = [0.1,0.1,1,0.1]
+
+
+# file_LBM = "../data/LBM_results_{}.csv"
+file_LBM = "../data/LBM_Results.xlsx"
+xl = pd.ExcelFile(file_LBM)
 
 for ic,cond in enumerate(conditions):
 
-    data_LBM = np.loadtxt(file_LBM.format(cond), delimiter = ',',skiprows = 1)
-    n_test_samples = int(np.round(test_sample_length*len(data_LBM)))
+    # data_LBM = np.loadtxt(file_LBM.format(cond), delimiter = ',',skiprows = 1)
+    data = pd.read_excel(xl,skiprows = [1],sheet_name=cond)
+    data_LBM = np.array(data)
 
     mm = MinMaxScaler()
     mm_data = mm.fit_transform(data_LBM)

@@ -2,7 +2,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-conditions = ['fav','unfav']
 params = ['CN','SC','HC','VF']
 iterations = [500,1500,3000]
 
@@ -15,10 +14,10 @@ title_text = ['Coordination number','Surface coverage','Conductivity','Void frac
 ### Data Files & Setting
 ###############################################################################
 
-data_name = '../data/SI/SVR_lin_Training_{}_{}_It{}.csv'#.format(cond,param,n_it)
-data_namef = '../data/SI/SVR_lin_Training_{}_{}_full.csv'#.format(cond,param,n_it)
+data_name = '../results/SI/SVR_lin_Training_{}_{}_It{}.csv'#.format(cond,param,n_it)
+data_namef = '../results/SI/SVR_lin_Training_{}_{}_full.csv'#.format(cond,param,n_it)
 
-cond = 'fav'
+cond = 'unfav'
 
 ###############################################################################
 ### Plot

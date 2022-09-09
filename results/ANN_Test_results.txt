@@ -1,0 +1,767 @@
+####################################################
+Performance Testing for Artificial Neural Network algorithm 
+ under favorable conditions
+####################################################
+
+#####################################
+Output Parameter: Coordination number
+
+Selected Hyperparameters: 
+ Number of neurons  =  219
+
+AI predicted values: 
+ [0.31251148 0.06498168 0.14090648 0.04071621 0.53164419 0.14078533
+ 0.69993793 0.05309408]
+LBM simulation values 
+ [0.27596762 0.21875447 0.05665055 0.18061237 0.77686872 0.12197843
+ 0.4321309  0.01561919]
+
+Training data set score (R2): 0.9155
+
+Test data set:
+R2 = 0.5642
+MSE = 0.0232
+MAE = 0.1230
+
+#####################################
+Output Parameter: Surface coverage
+
+Selected Hyperparameters: 
+ Number of neurons  =  57
+
+AI predicted values: 
+ [0.0479599  0.01026037 0.21225531 0.12954577 0.53919663 0.30226551
+ 0.12400419 0.22249997]
+LBM simulation values 
+ [0.11904762 0.         0.         0.11904762 0.77777778 0.16984127
+ 0.02777778 0.02539683]
+
+Training data set score (R2): 0.8009
+
+Test data set:
+R2 = 0.6335
+MSE = 0.0216
+MAE = 0.1211
+
+#####################################
+Output Parameter: Conductivity
+
+Selected Hyperparameters: 
+ Number of neurons  =  194
+
+AI predicted values: 
+ [ 0.03308211  0.07157504  0.09303762  0.05431278  0.19637356  0.58163473
+ -0.000535    1.05516525]
+LBM simulation values 
+ [0.0324659  0.05639174 0.04157987 0.04800256 0.1785391  0.74211411
+ 0.0651951  1.        ]
+
+Training data set score (R2): 0.9713
+
+Test data set:
+R2 = 0.9640
+MSE = 0.0045
+MAE = 0.0466
+
+#####################################
+Output Parameter: Void fraction
+
+Selected Hyperparameters: 
+ Number of neurons  =  146
+
+AI predicted values: 
+ [0.80806437 0.90106774 0.75419939 0.83201557 0.55404719 0.81192922
+ 0.68388291 0.95959166]
+LBM simulation values 
+ [0.71617762 0.88096462 0.92216138 0.75737437 0.13071895 0.8496732
+ 0.89542484 1.        ]
+
+Training data set score (R2): 0.6456
+
+Test data set:
+R2 = 0.4836
+MSE = 0.0337
+MAE = 0.1335
+####################################################
+Performance Testing for Artificial Neural Network algorithm 
+ under unfavorable conditions
+####################################################
+
+#####################################
+Output Parameter: Coordination number
+
+Selected Hyperparameters: 
+ Number of neurons  =  184
+
+AI predicted values: 
+ [0.55707445 0.04529853 0.08766276 0.14191121 0.65360734 0.19105778
+ 0.96243563 0.21487794]
+LBM simulation values 
+ [0.56438356 0.01878669 0.00547945 0.         0.67514677 0.18199609
+ 0.76908023 0.03620352]
+
+Training data set score (R2): 0.9368
+
+Test data set:
+R2 = 0.8729
+MSE = 0.0122
+MAE = 0.0826
+
+#####################################
+Output Parameter: Surface coverage
+
+Selected Hyperparameters: 
+ Number of neurons  =  339
+
+AI predicted values: 
+ [ 0.57026488  0.1245917  -0.05146399  0.12421336  0.56314303  0.48063986
+  0.47114014  0.11882786]
+LBM simulation values 
+ [0.63387242 0.01841869 0.00134771 0.         0.42048518 0.51257862
+ 0.39802336 0.2450584 ]
+
+Training data set score (R2): 0.8539
+
+Test data set:
+R2 = 0.8263
+MSE = 0.0095
+MAE = 0.0901
+
+#####################################
+Output Parameter: Conductivity
+
+Selected Hyperparameters: 
+ Number of neurons  =  156
+
+AI predicted values: 
+ [0.24206431 0.82205747 0.79477575 0.78183892 0.4289711  0.90034221
+ 0.25025492 1.01472071]
+LBM simulation values 
+ [0.15429666 0.94042122 0.89987611 0.90212862 0.44937493 0.93591621
+ 0.19822052 0.9902016 ]
+
+Training data set score (R2): 0.9768
+
+Test data set:
+R2 = 0.9412
+MSE = 0.0065
+MAE = 0.0705
+
+#####################################
+Output Parameter: Void fraction
+
+Selected Hyperparameters: 
+ Number of neurons  =  156
+
+AI predicted values: 
+ [0.13362051 0.72259855 0.8896462  0.77429582 0.41793883 0.7262702
+ 0.46759123 0.96756862]
+LBM simulation values 
+ [0.11261261 0.96171171 0.98348348 0.9954955  0.46921922 0.74324324
+ 0.43618619 0.96133634]
+
+Training data set score (R2): 0.9071
+
+Test data set:
+R2 = 0.8458
+MSE = 0.0149
+MAE = 0.0851
+#################### 
+ Parameter CN - fav
+
+ R2 max = 0.8943 at i = 271
+ sigma = 0.0098 at i = 271
+ 99% R2 max = 0.8862 at i = 131
+
+ sigma min = 0.0098 at i = 271
+ R2 at sigma min = 0.8943 at i = 271
+
+ R2 at training min = 0.8906 at i = 219
+ sigma = 0.0133 at i = 219
+ 
+#################### 
+ Parameter SC - fav
+
+ R2 max = 0.8364 at i = 388
+ sigma = 0.0424 at i = 388
+ 99% R2 max = 0.8286 at i = 311
+
+ sigma min = 0.0351 at i = 220
+ R2 at sigma min = 0.8035 at i = 220
+
+ R2 at training min = 0.6425 at i = 57
+ sigma = 0.1859 at i = 57
+ 
+#################### 
+ Parameter HC - fav
+
+ R2 max = 0.9667 at i = 184
+ sigma = 0.0052 at i = 184
+ 99% R2 max = 0.9573 at i = 61
+
+ sigma min = 0.0048 at i = 180
+ R2 at sigma min = 0.9662 at i = 180
+
+ R2 at training min = 0.9649 at i = 194
+ sigma = 0.0058 at i = 194
+ 
+#################### 
+ Parameter VF - fav
+
+ R2 max = 0.6585 at i = 354
+ sigma = 0.0180 at i = 354
+ 99% R2 max = 0.6526 at i = 211
+
+ sigma min = 0.0131 at i = 376
+ R2 at sigma min = 0.6491 at i = 376
+
+ R2 at training min = 0.6013 at i = 146
+ sigma = 0.1223 at i = 146
+ 
+#################### 
+ Parameter CN - unfav
+
+ R2 max = 0.9493 at i = 237
+ sigma = 0.0071 at i = 237
+ 99% R2 max = 0.9424 at i = 89
+
+ sigma min = 0.0053 at i = 289
+ R2 at sigma min = 0.9470 at i = 289
+
+ R2 at training min = 0.9464 at i = 184
+ sigma = 0.0064 at i = 184
+ 
+#################### 
+ Parameter SC - unfav
+
+ R2 max = 0.8637 at i = 327
+ sigma = 0.0160 at i = 327
+ 99% R2 max = 0.8575 at i = 222
+
+ sigma min = 0.0126 at i = 375
+ R2 at sigma min = 0.8607 at i = 375
+
+ R2 at training min = 0.8523 at i = 339
+ sigma = 0.0680 at i = 339
+ 
+#################### 
+ Parameter HC - unfav
+
+ R2 max = 0.9793 at i = 193
+ sigma = 0.0041 at i = 193
+ 99% R2 max = 0.9702 at i = 52
+
+ sigma min = 0.0036 at i = 188
+ R2 at sigma min = 0.9792 at i = 188
+
+ R2 at training min = 0.9780 at i = 156
+ sigma = 0.0041 at i = 156
+ 
+#################### 
+ Parameter VF - unfav
+
+ R2 max = 0.9052 at i = 185
+ sigma = 0.0130 at i = 185
+ 99% R2 max = 0.8976 at i = 93
+
+ sigma min = 0.0118 at i = 195
+ R2 at sigma min = 0.9044 at i = 195
+
+ R2 at training min = 0.9015 at i = 156
+ sigma = 0.0139 at i = 156
+ 
+#################### 
+ Parameter CN - fav
+
+ R2 max = 0.8943 at i = 271
+ sigma = 0.0098 at i = 271
+
+ sigma min = 0.0098 at i = 271
+ R2 at sigma min = 0.8943 at i = 271
+
+ R2 at training min = 0.8906 at i = 219
+ sigma = 0.0133 at i = 219
+ 
+#################### 
+ Parameter SC - fav
+
+ R2 max = 0.8364 at i = 388
+ sigma = 0.0424 at i = 388
+
+ sigma min = 0.0351 at i = 220
+ R2 at sigma min = 0.8035 at i = 220
+
+ R2 at training min = 0.6425 at i = 57
+ sigma = 0.1859 at i = 57
+ 
+#################### 
+ Parameter HC - fav
+
+ R2 max = 0.9667 at i = 184
+ sigma = 0.0052 at i = 184
+
+ sigma min = 0.0048 at i = 180
+ R2 at sigma min = 0.9662 at i = 180
+
+ R2 at training min = 0.9649 at i = 194
+ sigma = 0.0058 at i = 194
+ 
+#################### 
+ Parameter VF - fav
+
+ R2 max = 0.6585 at i = 354
+ sigma = 0.0180 at i = 354
+
+ sigma min = 0.0131 at i = 376
+ R2 at sigma min = 0.6491 at i = 376
+
+ R2 at training min = 0.6013 at i = 146
+ sigma = 0.1223 at i = 146
+ 
+#################### 
+ Parameter CN - unfav
+
+ R2 max = 0.9493 at i = 237
+ sigma = 0.0071 at i = 237
+
+ sigma min = 0.0053 at i = 289
+ R2 at sigma min = 0.9470 at i = 289
+
+ R2 at training min = 0.9464 at i = 184
+ sigma = 0.0064 at i = 184
+ 
+#################### 
+ Parameter SC - unfav
+
+ R2 max = 0.8637 at i = 327
+ sigma = 0.0160 at i = 327
+
+ sigma min = 0.0126 at i = 375
+ R2 at sigma min = 0.8607 at i = 375
+
+ R2 at training min = 0.8523 at i = 339
+ sigma = 0.0680 at i = 339
+ 
+#################### 
+ Parameter HC - unfav
+
+ R2 max = 0.9793 at i = 193
+ sigma = 0.0041 at i = 193
+
+ sigma min = 0.0036 at i = 188
+ R2 at sigma min = 0.9792 at i = 188
+
+ R2 at training min = 0.9780 at i = 156
+ sigma = 0.0041 at i = 156
+ 
+#################### 
+ Parameter VF - unfav
+
+ R2 max = 0.9052 at i = 185
+ sigma = 0.0130 at i = 185
+
+ sigma min = 0.0118 at i = 195
+ R2 at sigma min = 0.9044 at i = 195
+
+ R2 at training min = 0.9015 at i = 156
+ sigma = 0.0139 at i = 156
+ 
+#################### 
+ Parameter CN - fav
+
+ R2 max = 0.8943 at i = 271
+ sigma = 0.0098 at i = 271
+
+ sigma min = 0.0098 at i = 271
+ R2 at sigma min = 0.8943 at i = 271
+
+ R2 at training min = 0.8906 at i = 219
+ sigma = 0.0133 at i = 219
+ 
+#################### 
+ Parameter SC - fav
+
+ R2 max = 0.8364 at i = 388
+ sigma = 0.0424 at i = 388
+
+ sigma min = 0.0351 at i = 220
+ R2 at sigma min = 0.8035 at i = 220
+
+ R2 at training min = 0.6425 at i = 57
+ sigma = 0.1859 at i = 57
+ 
+#################### 
+ Parameter HC - fav
+
+ R2 max = 0.9667 at i = 184
+ sigma = 0.0052 at i = 184
+
+ sigma min = 0.0048 at i = 180
+ R2 at sigma min = 0.9662 at i = 180
+
+ R2 at training min = 0.9649 at i = 194
+ sigma = 0.0058 at i = 194
+ 
+#################### 
+ Parameter VF - fav
+
+ R2 max = 0.6585 at i = 354
+ sigma = 0.0180 at i = 354
+
+ sigma min = 0.0131 at i = 376
+ R2 at sigma min = 0.6491 at i = 376
+
+ R2 at training min = 0.6013 at i = 146
+ sigma = 0.1223 at i = 146
+ 
+#################### 
+ Parameter CN - unfav
+
+ R2 max = 0.9493 at i = 237
+ sigma = 0.0071 at i = 237
+
+ sigma min = 0.0053 at i = 289
+ R2 at sigma min = 0.9470 at i = 289
+
+ R2 at training min = 0.9464 at i = 184
+ sigma = 0.0064 at i = 184
+ 
+#################### 
+ Parameter SC - unfav
+
+ R2 max = 0.8637 at i = 327
+ sigma = 0.0160 at i = 327
+
+ sigma min = 0.0126 at i = 375
+ R2 at sigma min = 0.8607 at i = 375
+
+ R2 at training min = 0.8523 at i = 339
+ sigma = 0.0680 at i = 339
+ 
+#################### 
+ Parameter HC - unfav
+
+ R2 max = 0.9793 at i = 193
+ sigma = 0.0041 at i = 193
+
+ sigma min = 0.0036 at i = 188
+ R2 at sigma min = 0.9792 at i = 188
+
+ R2 at training min = 0.9780 at i = 156
+ sigma = 0.0041 at i = 156
+ 
+#################### 
+ Parameter VF - unfav
+
+ R2 max = 0.9052 at i = 185
+ sigma = 0.0130 at i = 185
+
+ sigma min = 0.0118 at i = 195
+ R2 at sigma min = 0.9044 at i = 195
+
+ R2 at training min = 0.9015 at i = 156
+ sigma = 0.0139 at i = 156
+ 
+#################### 
+ Parameter CN - fav
+
+ R2 max = 0.8943 at i = 271
+ sigma = 0.0098 at i = 271
+
+ sigma min = 0.0098 at i = 271
+ R2 at sigma min = 0.8943 at i = 271
+
+ R2 at training min = 0.8906 at i = 219
+ sigma = 0.0133 at i = 219
+ 
+#################### 
+ Parameter SC - fav
+
+ R2 max = 0.8364 at i = 388
+ sigma = 0.0424 at i = 388
+
+ sigma min = 0.0351 at i = 220
+ R2 at sigma min = 0.8035 at i = 220
+
+ R2 at training min = 0.6425 at i = 57
+ sigma = 0.1859 at i = 57
+ 
+#################### 
+ Parameter HC - fav
+
+ R2 max = 0.9667 at i = 184
+ sigma = 0.0052 at i = 184
+
+ sigma min = 0.0048 at i = 180
+ R2 at sigma min = 0.9662 at i = 180
+
+ R2 at training min = 0.9649 at i = 194
+ sigma = 0.0058 at i = 194
+ 
+#################### 
+ Parameter VF - fav
+
+ R2 max = 0.6585 at i = 354
+ sigma = 0.0180 at i = 354
+
+ sigma min = 0.0131 at i = 376
+ R2 at sigma min = 0.6491 at i = 376
+
+ R2 at training min = 0.6013 at i = 146
+ sigma = 0.1223 at i = 146
+ 
+#################### 
+ Parameter CN - unfav
+
+ R2 max = 0.9493 at i = 237
+ sigma = 0.0071 at i = 237
+
+ sigma min = 0.0053 at i = 289
+ R2 at sigma min = 0.9470 at i = 289
+
+ R2 at training min = 0.9464 at i = 184
+ sigma = 0.0064 at i = 184
+ 
+#################### 
+ Parameter SC - unfav
+
+ R2 max = 0.8637 at i = 327
+ sigma = 0.0160 at i = 327
+
+ sigma min = 0.0126 at i = 375
+ R2 at sigma min = 0.8607 at i = 375
+
+ R2 at training min = 0.8523 at i = 339
+ sigma = 0.0680 at i = 339
+ 
+#################### 
+ Parameter HC - unfav
+
+ R2 max = 0.9793 at i = 193
+ sigma = 0.0041 at i = 193
+
+ sigma min = 0.0036 at i = 188
+ R2 at sigma min = 0.9792 at i = 188
+
+ R2 at training min = 0.9780 at i = 156
+ sigma = 0.0041 at i = 156
+ 
+#################### 
+ Parameter VF - unfav
+
+ R2 max = 0.9052 at i = 185
+ sigma = 0.0130 at i = 185
+
+ sigma min = 0.0118 at i = 195
+ R2 at sigma min = 0.9044 at i = 195
+
+ R2 at training min = 0.9015 at i = 156
+ sigma = 0.0139 at i = 156
+ 
+#################### 
+ Parameter CN - fav
+
+ R2 max = 0.8943 at i = 271
+ sigma = 0.0098 at i = 271
+
+ sigma min = 0.0098 at i = 271
+ R2 at sigma min = 0.8943 at i = 271
+
+ R2 at training min = 0.8906 at i = 219
+ sigma = 0.0133 at i = 219
+ 
+#################### 
+ Parameter SC - fav
+
+ R2 max = 0.8364 at i = 388
+ sigma = 0.0424 at i = 388
+
+ sigma min = 0.0351 at i = 220
+ R2 at sigma min = 0.8035 at i = 220
+
+ R2 at training min = 0.6425 at i = 57
+ sigma = 0.1859 at i = 57
+ 
+#################### 
+ Parameter HC - fav
+
+ R2 max = 0.9667 at i = 184
+ sigma = 0.0052 at i = 184
+
+ sigma min = 0.0048 at i = 180
+ R2 at sigma min = 0.9662 at i = 180
+
+ R2 at training min = 0.9649 at i = 194
+ sigma = 0.0058 at i = 194
+ 
+#################### 
+ Parameter VF - fav
+
+ R2 max = 0.6585 at i = 354
+ sigma = 0.0180 at i = 354
+
+ sigma min = 0.0131 at i = 376
+ R2 at sigma min = 0.6491 at i = 376
+
+ R2 at training min = 0.6013 at i = 146
+ sigma = 0.1223 at i = 146
+ 
+#################### 
+ Parameter CN - unfav
+
+ R2 max = 0.9493 at i = 237
+ sigma = 0.0071 at i = 237
+
+ sigma min = 0.0053 at i = 289
+ R2 at sigma min = 0.9470 at i = 289
+
+ R2 at training min = 0.9464 at i = 184
+ sigma = 0.0064 at i = 184
+ 
+#################### 
+ Parameter SC - unfav
+
+ R2 max = 0.8637 at i = 327
+ sigma = 0.0160 at i = 327
+
+ sigma min = 0.0126 at i = 375
+ R2 at sigma min = 0.8607 at i = 375
+
+ R2 at training min = 0.8523 at i = 339
+ sigma = 0.0680 at i = 339
+ 
+#################### 
+ Parameter HC - unfav
+
+ R2 max = 0.9793 at i = 193
+ sigma = 0.0041 at i = 193
+
+ sigma min = 0.0036 at i = 188
+ R2 at sigma min = 0.9792 at i = 188
+
+ R2 at training min = 0.9780 at i = 156
+ sigma = 0.0041 at i = 156
+ 
+#################### 
+ Parameter VF - unfav
+
+ R2 max = 0.9052 at i = 185
+ sigma = 0.0130 at i = 185
+
+ sigma min = 0.0118 at i = 195
+ R2 at sigma min = 0.9044 at i = 195
+
+ R2 at training min = 0.9015 at i = 156
+ sigma = 0.0139 at i = 156
+ 
+#################### 
+ Parameter CN - fav
+
+ R2 max = 0.8943 at i = 271
+ sigma = 0.0098 at i = 271
+
+ sigma min = 0.0098 at i = 271
+ R2 at sigma min = 0.8943 at i = 271
+
+ R2 at training min = 0.8906 at i = 219
+ sigma = 0.0133 at i = 219
+ 
+#################### 
+ Parameter SC - fav
+
+ R2 max = 0.8364 at i = 388
+ sigma = 0.0424 at i = 388
+
+ sigma min = 0.0351 at i = 220
+ R2 at sigma min = 0.8035 at i = 220
+
+ R2 at training min = 0.6425 at i = 57
+ sigma = 0.1859 at i = 57
+ 
+#################### 
+ Parameter HC - fav
+
+ R2 max = 0.9667 at i = 184
+ sigma = 0.0052 at i = 184
+
+ sigma min = 0.0048 at i = 180
+ R2 at sigma min = 0.9662 at i = 180
+
+ R2 at training min = 0.9649 at i = 194
+ sigma = 0.0058 at i = 194
+ 
+#################### 
+ Parameter VF - fav
+
+ R2 max = 0.6585 at i = 354
+ sigma = 0.0180 at i = 354
+
+ sigma min = 0.0131 at i = 376
+ R2 at sigma min = 0.6491 at i = 376
+
+ R2 at training min = 0.6013 at i = 146
+ sigma = 0.1223 at i = 146
+ 
+#################### 
+ Parameter CN - unfav
+
+ R2 max = 0.9493 at i = 237
+ sigma = 0.0071 at i = 237
+
+ sigma min = 0.0053 at i = 289
+ R2 at sigma min = 0.9470 at i = 289
+
+ R2 at training min = 0.9464 at i = 184
+ sigma = 0.0064 at i = 184
+ 
+#################### 
+ Parameter SC - unfav
+
+ R2 max = 0.8637 at i = 327
+ sigma = 0.0160 at i = 327
+
+ sigma min = 0.0126 at i = 375
+ R2 at sigma min = 0.8607 at i = 375
+
+ R2 at training min = 0.8523 at i = 339
+ sigma = 0.0680 at i = 339
+ 
+#################### 
+ Parameter HC - unfav
+
+ R2 max = 0.9793 at i = 193
+ sigma = 0.0041 at i = 193
+
+ sigma min = 0.0036 at i = 188
+ R2 at sigma min = 0.9792 at i = 188
+
+ R2 at training min = 0.9780 at i = 156
+ sigma = 0.0041 at i = 156
+ 
+#################### 
+ Parameter VF - unfav
+
+ R2 max = 0.9052 at i = 185
+ sigma = 0.0130 at i = 185
+
+ sigma min = 0.0118 at i = 195
+ R2 at sigma min = 0.9044 at i = 195
+
+ R2 at training min = 0.9015 at i = 156
+ sigma = 0.0139 at i = 156
+ 
+
+Training procedure with cross validation on Clogging 
+ for ANN under favorable conditions
+ 20 iterations
+For N= 2 number of neurons, the average score is 0.922
+
+Training procedure with cross validation on Clogging 
+ for ANN under favorable conditions
+ 20 iterations
+For N= 2 number of neurons, the average score is 0.922
+For N= 3 number of neurons, the average score is 0.956
+For N= 4 number of neurons, the average score is 0.958
+For N= 5 number of neurons, the average score is 0.966
+For N= 6 number of neurons, the average score is 0.957
+For N= 7 number of neurons, the average score is 0.960

@@ -9,15 +9,14 @@ Decision Tree algorithm
 ################################################
 
 Selected Hyperparameters: 
- max_depth  =  5
- min_samples_split = 2
+ max_depth  =  6
 
 AI predicted values: 
- [ 1.  1.  1.  1. -1. -1.  1. -1.]
+ [1. 1. 1. 1. 0. 0. 1. 0.]
 LBM simulation values 
- [ 1.  1.  1.  1. -1. -1.  1. -1.]
+ [1. 1. 1. 1. 0. 0. 1. 0.]
 
-Training data set score (R2): 0.9863
+Training data set score (R2): 1.0000
 
 Test data set:
 R2 = 1.0000
@@ -29,11 +28,27 @@ Random Forest
 ################################################
 
 AI predicted values: 
- [ 1.  1.  1.  1. -1. -1.  1. -1.]
+ [1. 1. 1. 1. 0. 0. 1. 0.]
 LBM simulation values 
- [ 1.  1.  1.  1. -1. -1.  1. -1.]
+ [1. 1. 1. 1. 0. 0. 1. 0.]
 
 Training data set score (R2): 1.0000
+
+Test data set:
+R2 = 1.0000
+MSE = 0.0000
+MAE = 0.0000
+
+################################################
+Artificial Neural Network algorithm
+################################################
+
+AI predicted values: 
+ [1. 1. 1. 1. 0. 0. 1. 0.]
+LBM simulation values 
+ [1. 1. 1. 1. 0. 0. 1. 0.]
+
+Training data set score (R2): 0.9863
 
 Test data set:
 R2 = 1.0000
@@ -51,14 +66,13 @@ Decision Tree algorithm
 
 Selected Hyperparameters: 
  max_depth  =  3
- min_samples_split = 2
 
 AI predicted values: 
- [-1. -1. -1. -1. -1.]
+ [0. 0. 0. 0. 0. 0. 0. 0.]
 LBM simulation values 
- [-1. -1. -1. -1. -1.]
+ [0. 0. 0. 0. 0. 0. 0. 0.]
 
-Training data set score (R2): 1.0000
+Training data set score (R2): 0.9726
 
 Test data set:
 R2 = 1.0000
@@ -70,11 +84,27 @@ Random Forest
 ################################################
 
 AI predicted values: 
- [-1. -1. -1. -1. -1.]
+ [0. 0. 0. 0. 0. 0. 0. 0.]
 LBM simulation values 
- [-1. -1. -1. -1. -1.]
+ [0. 0. 0. 0. 0. 0. 0. 0.]
 
 Training data set score (R2): 1.0000
+
+Test data set:
+R2 = 1.0000
+MSE = 0.0000
+MAE = 0.0000
+
+################################################
+Artificial Neural Network algorithm
+################################################
+
+AI predicted values: 
+ [0. 0. 0. 0. 0. 0. 0. 0.]
+LBM simulation values 
+ [0. 0. 0. 0. 0. 0. 0. 0.]
+
+Training data set score (R2): 0.8493
 
 Test data set:
 R2 = 1.0000

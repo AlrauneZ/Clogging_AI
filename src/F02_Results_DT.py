@@ -6,8 +6,8 @@ conditions = ['fav','unfav']
 params = ['CN','SC','HC','VF']
 iterations = [500,1000,2000]
 hyper = 'mss' # 'D' #
-data_name = '../data/SI/DT_Training_{}_{}_It{}.csv'#.format(cond,param,n_it)
-data_namef = '../data/SI/DT_Training_{}_{}_full.csv'#.format(cond,param,n_it)
+data_name = '../results/SI/DT_Training_{}_{}_It{}.csv'#.format(cond,param,n_it)
+data_namef = '../results/SI/DT_Training_{}_{}_full.csv'#.format(cond,param,n_it)
 
 ### Plot Specifications
 plt.close('all')
@@ -15,8 +15,10 @@ textsize = 8
 title_text = ['Coordination number','Surface coverage','Conductivity','Void fraction']
 
 ### identified hyperparameters during Training
-max_depth = [[2,8,9,8],[2,7,5,4]]
-min_samples_split = [[5,6,2,7],[3,2,8,4]]
+max_depth = [[2,8,9,8],[2,3,4,4]]
+min_samples_split = [[5,6,2,7],[5,5,4,3]]
+# max_depth = [[2,8,9,8],[2,7,5,4]]
+# min_samples_split = [[5,6,2,7],[3,2,8,4]]
 
 max_depth[0][2]
 ###############################################################################

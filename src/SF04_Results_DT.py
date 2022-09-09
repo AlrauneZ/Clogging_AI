@@ -14,10 +14,10 @@ title_text = ['Coordination number','Surface coverage','Conductivity','Void frac
 ### Data Files & Setting
 ###############################################################################
 
-data_name = '../data/SI/DT_Training_{}_{}_It{}.csv'#.format(cond,param,n_it)
-data_namef = '../data/SI/DT_Training_{}_{}_full.csv'#.format(cond,param,n_it)
+data_name = '../results/SI/DT_Training_{}_{}_It{}.csv'#.format(cond,param,n_it)
+data_namef = '../results/SI/DT_Training_{}_{}_full.csv'#.format(cond,param,n_it)
 
-cond = 'unfav' #'fav' 3
+cond = 'fav' #'unfav' #
 
 ###############################################################################
 ### Plot

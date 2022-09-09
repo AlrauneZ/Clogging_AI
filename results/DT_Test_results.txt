@@ -11,18 +11,18 @@ Selected Hyperparameters:
  min_samples_split = 5
 
 AI predicted values: 
- [  0.93377211 146.18602694 146.18602694 146.18602694 913.57411765
- 214.406875   913.57411765 214.406875  ]
+ [0.93377211 0.49852694 0.49852694 0.49852694 1.81032353 0.3086875
+ 1.81032353 0.3086875 ]
 LBM simulation values 
- [   0.92307692    0.76923077    0.33333333    0.66666667    2.27
-  509.         1343.          223.        ]
+ [0.92307692 0.76923077 0.33333333 0.66666667 2.27       0.509
+ 1.343      0.223     ]
 
-Training data set score (R2): 0.2755
+Training data set score (R2): 0.7506
 
 Test data set:
-R2 = 0.2585
-MSE = 145666.9589
-MAE = 260.0895
+R2 = 0.8028
+MSE = 0.0758
+MAE = 0.2285
 
 #####################################
 Output Parameter: Surface coverage
@@ -32,17 +32,16 @@ Selected Hyperparameters:
  min_samples_split = 6
 
 AI predicted values: 
- [  0.08333333  41.71666667  25.03333333  83.35         0.31166667
-   0.1275     142.4         80.81938   ]
+ [0.075  0.125  0.0625 0.125  0.5728 0.1774 0.0925 0.094 ]
 LBM simulation values 
- [125.       0.05     0.05   125.       0.54   157.       0.0675  66.    ]
+ [0.125  0.05   0.05   0.125  0.54   0.157  0.0675 0.066 ]
 
-Training data set score (R2): 0.5850
+Training data set score (R2): 0.8636
 
 Test data set:
-R2 = -1.0117
-MSE = 8098.2953
-MAE = 68.4337
+R2 = 0.9403
+MSE = 0.0014
+MAE = 0.0305
 
 #####################################
 Output Parameter: Conductivity
@@ -52,18 +51,18 @@ Selected Hyperparameters:
  min_samples_split = 2
 
 AI predicted values: 
- [  0.09242138   0.08793751   0.0653089    0.08705418   0.29
-   0.62         0.0716     797.        ]
+ [0.09242138 0.08793751 0.0653089  0.08705418 0.2        0.606
+ 0.0837     0.797     ]
 LBM simulation values 
- [  0.06988273   0.08890198   0.07712766   0.08223321 186.
- 634.           0.0959     839.        ]
+ [0.06988273 0.08890198 0.07712766 0.08223321 0.186      0.634
+ 0.0959     0.839     ]
 
 Training data set score (R2): 1.0000
 
 Test data set:
-R2 = 0.4507
-MSE = 54677.8037
-MAE = 107.6443
+R2 = 0.9944
+MSE = 0.0004
+MAE = 0.0170
 
 #####################################
 Output Parameter: Void fraction
@@ -73,18 +72,18 @@ Selected Hyperparameters:
  min_samples_split = 7
 
 AI predicted values: 
- [  0.91175656   0.94201145   0.88654414   0.926884   905.5
- 905.5        184.526      968.        ]
+ [0.93696897 0.93907    0.93907    0.93907    0.7352     0.945
+ 0.9355     0.9804    ]
 LBM simulation values 
- [  0.89915035   0.94957517   0.96218138   0.91175656   0.72
-   0.94       954.         986.        ]
+ [0.89915035 0.94957518 0.96218138 0.91175656 0.72       0.94
+ 0.954      0.986     ]
 
-Training data set score (R2): 0.6992
+Training data set score (R2): 0.7798
 
 Test data set:
-R2 = -0.5819
-MSE = 278658.7356
-MAE = 324.6156
+R2 = 0.9294
+MSE = 0.0004
+MAE = 0.0179
 ################################################
 Performance Testing for Decision Tree algorithm 
 under unfavorable conditions
@@ -95,80 +94,77 @@ Output Parameter: Coordination number
 
 Selected Hyperparameters: 
  max_depth  =  2
- min_samples_split = 3
+ min_samples_split = 5
 
 AI predicted values: 
- [341.03764706  83.24552639  83.24552639 965.28716471 294.76291713]
+ [1.36705882 0.22184028 0.22184028 0.22184028 2.00158235 0.6080732
+ 2.00158235 0.22184028]
 LBM simulation values 
- [  2.17 195.   244.     2.18 565.  ]
+ [1.587  0.193  0.159  0.145  1.87   0.61   2.11   0.2375]
 
-Training data set score (R2): 0.1742
+Training data set score (R2): 0.8869
 
 Test data set:
-R2 = -4.4055
-MSE = 230753.1674
-MAE = 368.9442
+R2 = 0.9824
+MSE = 0.0110
+MAE = 0.0808
 
 #####################################
 Output Parameter: Surface coverage
 
 Selected Hyperparameters: 
- max_depth  =  7
- min_samples_split = 2
+ max_depth  =  3
+ min_samples_split = 5
 
 AI predicted values: 
- [248.       0.0956   0.05     0.2715 328.    ]
+ [0.28072727 0.05331111 0.05331111 0.05331111 0.28072727 0.20274
+ 0.2188     0.11442   ]
 LBM simulation values 
- [215.      65.      77.       0.3375 278.    ]
+ [0.307  0.033  0.0254 0.0248 0.212  0.253  0.202  0.1339]
 
-Training data set score (R2): 1.0000
+Training data set score (R2): 0.7134
 
 Test data set:
-R2 = 0.7407
-MSE = 2744.5776
-MAE = 44.9841
+R2 = 0.8780
+MSE = 0.0013
+MAE = 0.0323
 
 #####################################
 Output Parameter: Conductivity
-
-Selected Hyperparameters: 
- max_depth  =  5
- min_samples_split = 8
-
-AI predicted values: 
- [141.414        0.88825    756.55937143   0.5059       0.88825   ]
-LBM simulation values 
- [309.     874.       0.88     0.4791   0.8986]
-
-Training data set score (R2): 0.5847
-
-Test data set:
-R2 = -1.3539
-MSE = 272292.1017
-MAE = 359.2829
-
-#####################################
-Output Parameter: Void fraction
 
 Selected Hyperparameters: 
  max_depth  =  4
  min_samples_split = 4
 
 AI predicted values: 
- [403.405  489.99   489.99   124.599    0.9406]
+ [0.107585   0.82866667 0.82866667 0.82866667 0.348125   0.855
+ 0.26595455 0.91378   ]
 LBM simulation values 
- [823.     978.       0.97     0.8487   0.9473]
+ [0.166  0.864  0.828  0.83   0.428  0.86   0.205  0.9082]
 
-Training data set score (R2): 0.4792
+Training data set score (R2): 0.9840
 
 Test data set:
-R2 = 0.3198
-MSE = 133733.6843
-MAE = 304.0764
+R2 = 0.9789
+MSE = 0.0019
+MAE = 0.0309
 
-Training procedure for decision tree algorithm under favorable conditions
+#####################################
+Output Parameter: Void fraction
 
-Maximum score 0.92 for max_depth = 12 and min_samples_split = 2
+Selected Hyperparameters: 
+ max_depth  =  4
+ min_samples_split = 3
 
-Maximum score 1.00 for max_depth = 12 and min_samples_split = 2
-DC Training finished.
+AI predicted values: 
+ [0.77927273 0.97433333 0.975      0.975      0.81118182 0.9185
+ 0.8692     0.9594    ]
+LBM simulation values 
+ [0.75   0.9762 0.982  0.9852 0.845  0.918  0.8362 0.9761]
+
+Training data set score (R2): 0.8810
+
+Test data set:
+R2 = 0.9358
+MSE = 0.0004
+MAE = 0.0165
