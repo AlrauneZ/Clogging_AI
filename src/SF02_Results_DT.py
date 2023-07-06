@@ -31,8 +31,8 @@ for ip,param in enumerate(params):
 
     for it,n_it in enumerate(iterations):
         data_load = np.loadtxt(data_name.format(cond,param,n_it),delimiter = ',')
-        range_max_depth = data_load[1:,0] #range(2,20)
-        range_min_samples_split = data_load[0,1:] #range(2,10)
+        range_max_depth = data_load[1:,0] 
+        range_min_samples_split = data_load[0,1:] 
         ind = np.unravel_index(np.argmax(data_load[1:,1:], axis=None), data_load[1:,1:].shape)
         print("\nIterations: {}".format(n_it))
         print('Maximum score {:.2f} for max_depth = {} and min_samples_split = {}'.format(data_load[ind[0]+1,ind[1]+1],range_max_depth[ind[0]],range_min_samples_split[ind[1]]))
@@ -54,8 +54,8 @@ for ip,param in enumerate(params):
         ax.set_xticklabels(range_max_depth[::4],fontsize=textsize-1)    
 
     data_full = np.loadtxt(data_namef.format(cond,param),delimiter = ',')
-    range_max_depth = data_full[1:,0] #range(2,20)
-    range_min_samples_split = data_full[0,1:] #range(2,10)
+    range_max_depth = data_full[1:,0] 
+    range_min_samples_split = data_full[0,1:] 
 
     ind = np.unravel_index(np.argmax(data_full[1:,1:], axis=None), data_full[1:,1:].shape)
     print("\nFull")
@@ -78,5 +78,5 @@ for ip,param in enumerate(params):
 fig.text(0.007,0.023,'{}orable \nconditions'.format(cond),fontsize=textsize, bbox=dict(facecolor='w', alpha=0.2,boxstyle='round'))#transform=ax1.transAxes)
 plt.tight_layout()
 
-plt.savefig('../results/FigS04_DT_Hyper_{}.pdf'.format(cond))   
+plt.savefig('../results/FigS02_DT_Hyper_{}.pdf'.format(cond))   
 

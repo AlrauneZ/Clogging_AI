@@ -38,15 +38,15 @@ for ic, cond in enumerate(conditions):
         if ic == 0:
             ax.set_title(title_text[ip],fontsize=textsize)
             if ip == 0:        
-                ax.set_ylabel('$R^2$ - fav',fontsize=textsize)
+                ax.set_ylabel('NSE - fav',fontsize=textsize)
         elif ic == 1:
             ax.set_xlabel(r'$D_{RF}$',fontsize=textsize)
             if ip == 0:        
-                ax.set_ylabel('$R^2$ - unfav',fontsize=textsize)
+                ax.set_ylabel('NSE - unfav',fontsize=textsize)
 
 plt.tight_layout()
 fig.legend(iterations+['full'], ncol = 7,bbox_to_anchor=[0.80, 0.105],fontsize=textsize)#,&nbsp)
 fig.subplots_adjust(bottom=0.24)# Adjusting the sub-plots
 
-plt.savefig('../results/FigS05_RF_Hyper.pdf')   
+plt.savefig('../results/FigS03_RF_Hyper.pdf')   
 

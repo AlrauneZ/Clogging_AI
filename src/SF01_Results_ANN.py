@@ -54,13 +54,13 @@ for ic, cond in enumerate(conditions):
         if ic == 0:
             ax.set_title(title_text[ip],fontsize=textsize)
             if ip == 0:        
-                ax.set_ylabel('$R^2$ - fav',fontsize=textsize)
+                ax.set_ylabel('NSE - fav',fontsize=textsize)
         elif ic == 1:
             ax.set_xlabel('Number of Neurons',fontsize=textsize)
             if ip == 0:        
-                ax.set_ylabel('$R^2$ - unfav',fontsize=textsize)
+                ax.set_ylabel('NSE - unfav',fontsize=textsize)
         
 
 plt.tight_layout()
-plt.savefig('../results/FigS02_ANN_Hyper_Full.pdf')   
+plt.savefig('../results/FigS01_ANN_Hyper_Full.pdf')   
 

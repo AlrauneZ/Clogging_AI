@@ -29,10 +29,6 @@ for ic,cond in enumerate(conditions):
     for ip,param in enumerate(params):
         ax = fig.add_subplot(len(conditions),len(params), len(params)*ic + ip + 1)
 
-        # ### keeping the order of methods
-        # r2_score = results[ip,:]
-        # names = method_names
-
         ### sorting the methods results according performance
         isort =  np.argsort(results[ip,:])
         r2_score = results[ip,isort]
@@ -44,7 +40,7 @@ for ic,cond in enumerate(conditions):
         ax.set_yticklabels(names,fontsize=textsize)
         
         ax.tick_params(axis="both",which="major",labelsize=textsize-1)
-        ax.set_xlabel('$R^2$',fontsize=textsize)
+        ax.set_xlabel('NSE',fontsize=textsize)
         xmin = min(np.min(r2_score),0)
         ax.set_xlim([1.2*xmin,1])
         ax.set_xticks([0,0.5,1])

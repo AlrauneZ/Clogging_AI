@@ -17,13 +17,13 @@ title_text = ['Coordination number','Surface coverage','Conductivity','Void frac
 data_name = '../results/SI/SVR_lin_Training_{}_{}_It{}.csv'#.format(cond,param,n_it)
 data_namef = '../results/SI/SVR_lin_Training_{}_{}_full.csv'#.format(cond,param,n_it)
 
-cond = 'unfav'
+cond = 'fav'
 
 ###############################################################################
 ### Plot
 ###############################################################################
 
-fig = plt.figure(figsize = [7.5,7.5])
+fig = plt.figure(figsize = [5,5])
 for ip,param in enumerate(params):
 
     for it,n_it in enumerate(iterations):
@@ -65,4 +65,4 @@ for ip,param in enumerate(params):
 fig.text(0.01,0.02,'{}orable \nconditions'.format(cond),fontsize=textsize, bbox=dict(facecolor='w', alpha=0.2,boxstyle='round'))#transform=ax1.transAxes)
 plt.tight_layout()
 
-plt.savefig('../results/FigS07_SVR_Hyper_{}.pdf'.format(cond))   
+plt.savefig('../results/FigS05_SVR_Hyper_{}.pdf'.format(cond))   

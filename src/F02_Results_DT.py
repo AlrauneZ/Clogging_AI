@@ -17,8 +17,6 @@ title_text = ['Coordination number','Surface coverage','Conductivity','Void frac
 ### identified hyperparameters during Training
 max_depth = [[2,8,9,8],[2,3,4,4]]
 min_samples_split = [[5,6,2,7],[5,5,4,3]]
-# max_depth = [[2,8,9,8],[2,7,5,4]]
-# min_samples_split = [[5,6,2,7],[3,2,8,4]]
 
 max_depth[0][2]
 ###############################################################################
@@ -36,13 +34,13 @@ for ic, cond in enumerate(conditions):
             data_load = np.loadtxt(data_name.format(cond,param,n_it),delimiter = ',')
 
             if hyper == 'D':
-                # ###range: max_depth
-                x = data_load[1:,0] #range(2,20)
+                ###range: max_depth
+                x = data_load[1:,0] 
                 score = data_load[1:,min_samples_split[ic][ip]-1]
                 
             elif hyper == 'mss':
                 ### range: min_samples_split
-                x = data_load[0,1:] #range(2,10)
+                x = data_load[0,1:] 
                 score = data_load[max_depth[ic][ip]-1,1:]
                 
             ax.plot(x,score,marker = 'o',ls = '-',lw=1,markersize = 4)
@@ -50,13 +48,13 @@ for ic, cond in enumerate(conditions):
         data_load = np.loadtxt(data_namef.format(cond,param),delimiter = ',')
        
         if hyper == 'D':
-            # ###range: max_depth
-            x = data_load[1:,0] #range(2,20)
+            ###range: max_depth
+            x = data_load[1:,0] 
             score = data_load[1:,min_samples_split[ic][ip]-1]
             hyp2, hyp2_val = 'mss',min_samples_split[ic][ip]
         elif hyper == 'mss':
             ### range: min_samples_split
-            x = data_load[0,1:] #range(2,10)
+            x = data_load[0,1:] 
             score = data_load[max_depth[ic][ip]-1,1:]
             hyp2,hyp2_val = 'D',max_depth[ic][ip]
 
@@ -69,7 +67,7 @@ for ic, cond in enumerate(conditions):
         elif ic == 1:
             ax.set_xlabel('{}'.format(hyper),fontsize=textsize)
         if ip == 0:        
-            ax.set_ylabel(r'$R^2$',fontsize=textsize)
+            ax.set_ylabel(r'NSE',fontsize=textsize)
         
         ax.text(0.05,0.6,'{} = {}'.format(hyp2,hyp2_val),fontsize=textsize, bbox=dict(facecolor='w', alpha=0.5,boxstyle='round'),transform=ax.transAxes)
 
@@ -81,6 +79,4 @@ plt.tight_layout()
 fig.legend(iterations+['full'], ncol = 7,bbox_to_anchor=[0.75, 0.10],fontsize=textsize)#,&nbsp)
 fig.subplots_adjust(bottom=0.2)# Adjusting the sub-plots
 
-# plt.savefig('../results/Fig01_ANN_Hyper.png',dpi=300)   
-# plt.savefig('../results/Fig02_DT_Hyper_mms.pdf')   
 plt.savefig('../results/Fig02_DT_Hyper_{}.pdf'.format(hyper))   

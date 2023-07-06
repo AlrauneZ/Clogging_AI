@@ -2,7 +2,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-#condition = 'unfav' #'fav' # 
 conditions = ['fav','unfav']
 params = ['CN','SC','HC','VF']
 
@@ -29,10 +28,6 @@ for ic,cond in enumerate(conditions):
     for ip,param in enumerate(params):
         ax = fig.add_subplot(len(conditions),len(params), len(params)*ic + ip + 1)
 
-        # ### keeping the order of methods
-        # r2_score = results[ip,:]
-        # names = method_names
-
         ### sorting the methods results according performance
         isort =  np.argsort(results[ip,:])
         r2_score = results[ip,isort]
@@ -53,4 +48,4 @@ plt.tight_layout()
 fig.text(0.02,0.5,'favorable',fontsize=textsize, bbox=dict(facecolor='w', alpha=0.2,boxstyle='round'))#transform=ax1.transAxes)
 fig.text(0.02,0.025,'unfavorable',fontsize=textsize, bbox=dict(facecolor='w', alpha=0.2,boxstyle='round'))#transform=ax1.transAxes)
 
-plt.savefig('../results/FigS08_Results_Testing_MSE.pdf')   
+plt.savefig('../results/FigS06_Results_Testing_MSE.pdf')   
