@@ -17,15 +17,8 @@ np.set_printoptions(suppress = True)
 ### identified hyperparameters during Training
 max_depth_fav = [2,8,9,8]
 min_samples_split_fav = [5,6,2,7]
-# max_depth_unfav = [2,7,5,4]
-# min_samples_split_unfav = [3,2,8,4]
 max_depth_unfav = [2,3,4,4]
 min_samples_split_unfav = [5,5,4,3]
-# test_results = np.zeros((12,2))
-
-#file_LBM = "../data/LBM_results_{}.csv"
-# file_LBM = "../data/LBM_Results.xlsx"
-# xl = pd.ExcelFile(file_LBM)
 
 file_LBM = "../data/LBM_Results.xlsx"
 xl = pd.ExcelFile(file_LBM)
@@ -34,11 +27,6 @@ for ic,cond in enumerate(conditions):
 
     data_LBM = pd.read_excel(xl,skiprows = [1],sheet_name=cond)
     data_LBM = np.array(data_LBM)
-    # data_LBM = np.loadtxt("../data/LBM_results_{}.csv".format(cond), delimiter = ',',skiprows = 1)
-    # data_LBM = np.loadtxt(file_LBM.format(cond), delimiter = ',',skiprows = 1)
-
-    # data = pd.read_excel(xl,skiprows = [1],sheet_name=condition)
-    # data_LBM = np.array(data)
     
     input_data_training = data_LBM[:n_test_samples,0:4]
     output_data_training = data_LBM[:n_test_samples,4:8]
@@ -70,10 +58,10 @@ for ic,cond in enumerate(conditions):
         print('\nAI predicted values: \n {}'.format(y_pred))
         print('LBM simulation values \n {}'.format(output_data_testing[:,io]))
         
-        print("\nTraining data set score (R2): {:.4f}".format(tree.score(input_data_training, output_data_training[:,io])))
+        print("\nTraining data set score (NSE): {:.4f}".format(tree.score(input_data_training, output_data_training[:,io])))
         print("\nTest data set:")
         #print("Test set score: {:.4f}".format(tree.score(input_data_testing, output_data_testing[:,io])))
-        print("R2 = {:.4f}".format(r2_score(output_data_testing[:,io], y_pred)))
+        print("NSE = {:.4f}".format(r2_score(output_data_testing[:,io], y_pred)))
         print("MSE = {:.4f}".format(mean_squared_error(output_data_testing[:,io], y_pred)))
         print("MAE = {:.4f}".format(mean_absolute_error(output_data_testing[:,io], y_pred)))
 

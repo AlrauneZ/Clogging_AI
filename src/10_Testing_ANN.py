@@ -61,9 +61,9 @@ for ic,cond in enumerate(conditions):
         print('\nAI predicted values: \n {}'.format(y_pred))
         print('LBM simulation values \n {}'.format(output_data_testing[:,io]))
         
-        print("\nTraining data set score (R2): {:.4f}".format(r2_training))
+        print("\nTraining data set score (NSE=R2): {:.4f}".format(r2_training))
         print("\nTest data set:")    
-        print("R2 = {:.4f}".format(r2_testing))
+        print("NSE = {:.4f}".format(r2_testing))
         print("MSE = {:.4f}".format(mean_squared_error(output_data_testing[:,io], y_pred)))
         print("MAE = {:.4f}".format(mean_absolute_error(output_data_testing[:,io], y_pred)))
 

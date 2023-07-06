@@ -18,7 +18,6 @@ np.set_printoptions(suppress = True)
 
 ### identified hyperparameters during Training
 alpha_fav = [0.1,1,0.01,10]
-# alpha_unfav = [0.1,100,0.1,0.01]
 alpha_unfav = [0.01,100,0.01,0.01]
 
 file_LBM = "../data/LBM_Results.xlsx"
@@ -35,7 +34,6 @@ for ic,cond in enumerate(conditions):
     input_data_testing = data_LBM[n_test_samples:,0:4]
     output_data_testing = data_LBM[n_test_samples:,4:8]
     
-
     ###############################################################################
     ### Run Testing Procedure and Print Output
     ###############################################################################
@@ -62,9 +60,9 @@ for ic,cond in enumerate(conditions):
         print('\nAI predicted values: \n {}'.format(y_pred))
         print('LBM simulation values \n {}'.format(output_data_testing[:,io]))
         
-        print("\nTraining data set score (R2): {:.4f}".format(r2_training))
+        print("\nTraining data set score (NSE): {:.4f}".format(r2_training))
         print("\nTest data set:")    
-        print("R2 = {:.4f}".format(r2_score(output_data_testing[:,io], y_pred)))
+        print("NSE = {:.4f}".format(r2_score(output_data_testing[:,io], y_pred)))
         print("MSE = {:.4f}".format(mean_squared_error(output_data_testing[:,io], y_pred)))
         print("MAE = {:.4f}".format(mean_absolute_error(output_data_testing[:,io], y_pred)))
 

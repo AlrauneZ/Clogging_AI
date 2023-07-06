@@ -21,19 +21,14 @@ np.set_printoptions(suppress = True)
 C_fav = [10,100,10,100]
 gamma_fav = [1,1,1,1]
 
-# C_unfav = [100,10,100,10]
-# gamma_unfav = [1,100,1,0.1]
 C_unfav = [100,100,100,100]
 gamma_unfav = [0.1,0.1,1,0.1]
 
-
-# file_LBM = "../data/LBM_results_{}.csv"
 file_LBM = "../data/LBM_Results.xlsx"
 xl = pd.ExcelFile(file_LBM)
 
 for ic,cond in enumerate(conditions):
 
-    # data_LBM = np.loadtxt(file_LBM.format(cond), delimiter = ',',skiprows = 1)
     data = pd.read_excel(xl,skiprows = [1],sheet_name=cond)
     data_LBM = np.array(data)
 
@@ -45,8 +40,7 @@ for ic,cond in enumerate(conditions):
 
     input_data_testing = mm_data[n_test_samples:,0:4]
     output_data_testing = data_LBM[n_test_samples:,4:8]
-
-   
+  
     ###############################################################################
     ### Run Testing Procedure and Print Output
     ###############################################################################
@@ -74,7 +68,7 @@ for ic,cond in enumerate(conditions):
         
         print("\nTraining set score (R2): {:.4f}".format(r2_training))
         print("\nTest data set:")
-        print("\nR2 = {:.4f}".format(r2_score(output_data_testing[:,io], y_pred)))
+        print("\nNSE = {:.4f}".format(r2_score(output_data_testing[:,io], y_pred)))
         print("MSE = {:.4f}".format(mean_squared_error(output_data_testing[:,io], y_pred)))
         print("MAE = {:.4f}".format(mean_absolute_error(output_data_testing[:,io], y_pred)))
 

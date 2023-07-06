@@ -21,14 +21,6 @@ name_output = ['Coordination number','Surface coverage','Conductivity','Void fra
 name_output_short = ['CN','SC','HC','VF']
 n_training = 73
 
-# data_LBM = np.loadtxt("../data/LBM_results_{}.csv".format(condition), delimiter = ',',skiprows = 1)
-# test_sample_length = 0.9
-# n_test_samples = int(np.round(test_sample_length*len(data_LBM)))
-# mm = MinMaxScaler()
-# mm_data = mm.fit_transform(data_LBM)
-# input_data = mm_data[:n_test_samples,0:4]
-# output_data = data_LBM[:n_test_samples,4:8]
-
 ## Load simulation results from Lattice Boltzman Method (physical transport simualation) 
 file_LBM = "../data/LBM_Results.xlsx"
 xl = pd.ExcelFile(file_LBM)

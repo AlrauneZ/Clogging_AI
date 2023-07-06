@@ -2,7 +2,6 @@ import numpy as np
 import pandas as pd
 from sklearn.linear_model import Ridge
 from sklearn.model_selection import RepeatedKFold, cross_val_score
-# from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 ###############################################################################
 ### Load data and set algorithm parameters
@@ -19,12 +18,6 @@ n_splits = 10
 n_training = 73
 name_output = ['Coordination number','Surface coverage','Conductivity','Void fraction']
 name_output_short = ['CN','SC','HC','VF']
-
-# data_LBM = np.loadtxt("../data/LBM_results_{}.csv".format(condition), delimiter = ',',skiprows = 1)
-# test_sample_length = 0.9
-# n_test_samples = int(np.round(test_sample_length*len(data_LBM)))
-# input_data = data_LBM[:n_test_samples,0:4]
-# output_data = data_LBM[:n_test_samples,4:8]
 
 ### Load simulation results from Lattice Boltzman Method (physical transport simualation) 
 file_LBM = "../data/LBM_Results.xlsx"
@@ -91,7 +84,7 @@ if full:
             # print('\nAI predicted values: \n {}'.format(y_pred))
             # print('LBM simulation values \n {}'.format(output_data_testing[:,io]))
     
-            # print("\nR2 for the test set: {:.4f}".format(r2_score(output_data_testing[:,io], y_pred)))
+            # print("\nNSE for the test set: {:.4f}".format(r2_score(output_data_testing[:,io], y_pred)))
             # print("MAE for the test set: {:.4f}".format(mean_absolute_error(output_data_testing[:,io], y_pred)))
             # print("MSE for the test set: {:.4f}".format(mean_squared_error(output_data_testing[:,io], y_pred)))
     

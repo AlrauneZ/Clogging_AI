@@ -37,8 +37,6 @@ range_neurons = np.arange(2,nn_max[io])
 np.set_printoptions(suppress = True)
 np.random.seed(12345678+iterations)
 
-
-#name_file = '../results/ANN_Training_{}_{}_It{}.csv'.format(condition,name_output_short[io],iterations)
 name_file = '../results/ANN_L_{}_{}_It{}.csv'.format(name_output_short[io],condition,iterations)
 
 ###############################################################################

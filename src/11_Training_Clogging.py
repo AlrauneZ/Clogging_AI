@@ -1,17 +1,15 @@
 import numpy as np
 import pandas as pd
-from sklearn.tree import DecisionTreeRegressor, DecisionTreeClassifier
-from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
-from sklearn.neural_network import MLPRegressor, MLPClassifier
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import RepeatedKFold, cross_val_score
-# from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 ###############################################################################
 ### Load data and set algorithm parameters
 ###############################################################################
 
 condition =  'fav' #'unfav' #
-algorithm =   'DT' #'ANN' #,'ALL'  # 
+algorithm =  'ALL'  # #'DT' #'ANN' #,
 #full =  True #False #
 
 ### data specifics
@@ -128,5 +126,5 @@ if algorithm in ['ANN','ALL']:
     #     print('\nMaximum score {:.2f} for neurons = {}'.format(results_all[ind,1],results[ind,0]))
     #     np.savetxt('../results/Clogging_Training_ANN_{}_full.csv'.format(condition),results_all,fmt = '%.4f',delimiter = ',')
     
-print("ANN Training finished.")
+    print("ANN Training finished.")
 

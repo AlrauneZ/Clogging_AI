@@ -79,7 +79,7 @@ if full:
     
             forest.fit(input_data,output_data[:,io])
             r2_training = forest.score(input_data, output_data[:,io])
-            print("\nTraining set score (R2): {:.4f}".format(r2_training))
+            print("\nTraining set score (NSE = R2): {:.4f}".format(r2_training))
             results_all[io+1,ine] =  r2_training
             
     print('Save Training full set results to file. \n')
