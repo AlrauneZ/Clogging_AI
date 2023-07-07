@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/407502648.svg)](https://zenodo.org/badge/latestdoi/407502648)
+
 # Overview
 
 This project provides all python scripts to reproduce the results of the manuscript
