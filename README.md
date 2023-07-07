@@ -54,19 +54,18 @@ The project is organized as follows:
 
 - `src/` - here we place your python/matlab scripts 
 
-  + to be added: one script for running each IA, e.g.
-  +`01_Training_DT.py` - run the training for the DT
-  +`02_Testing_DT.py` - run the performance test for the DT
-  +`03_Training_RF.py` - run the training for the RF
-  +`04_Testing_DT.py` - run the performance test for the RF
-  +`05_Training_DT.py` - run the training for the LR
-  +`06_Testing_DT.py` - run the performance test for the LR
-  +`07_Training_DT.py` - run the training for the SVR
-  +`08_Testing_DT.py` - run the performance test for the SVR
-  +`09_Training_DT.py` - run the training for the ANN
-  +`10_Testing_DT.py` - run the performance test for the ANN
-  +`11_Training_DT.py` - run the training for clogging data set (ANN, DT)
-  +`12_Testing_DT.py` - run the performance test for clogging data set (ANN, DT, RF)
+  + `01_Training_DT.py` - run the training for the DT
+  + `02_Testing_DT.py` - run the performance test for the DT
+  + `03_Training_RF.py` - run the training for the RF
+  + `04_Testing_DT.py` - run the performance test for the RF
+  + `05_Training_DT.py` - run the training for the LR
+  + `06_Testing_DT.py` - run the performance test for the LR
+  + `07_Training_DT.py` - run the training for the SVR
+  + `08_Testing_DT.py` - run the performance test for the SVR
+  + `09_Training_DT.py` - run the training for the ANN
+  + `10_Testing_DT.py` - run the performance test for the ANN
+  + `11_Training_DT.py` - run the training for clogging data set (ANN, DT)
+  + `12_Testing_DT.py` - run the performance test for clogging data set (ANN, DT, RF)
   + `Fig01_Results_ANN.py` - script to create Figure 1 from the manuscript
   + `Fig02_Results_DT.py` - script to create Figure 2 from the manuscript
   + `Fig03_Results_Testing.py` - script to create Figure 3 from the manuscript
